@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "TalentConsulting.TalentSuite.Projects.Infrastructure/1.0.0": {
+        "dependencies": {
+          "TalentConsulting.TalentSuite.Projects.Core": "1.0.0"
+        },
+        "runtime": {
+          "TalentConsulting.TalentSuite.Projects.Infrastructure.dll": {}
+        }
+      },
+      "TalentConsulting.TalentSuite.Projects.Common/1.0.0": {
+        "runtime": {
+          "TalentConsulting.TalentSuite.Projects.Common.dll": {}
+        }
+      },
+      "TalentConsulting.TalentSuite.Projects.Core/1.0.0": {
+        "dependencies": {
+          "TalentConsulting.TalentSuite.Projects.Common": "1.0.0"
+        },
+        "runtime": {
+          "TalentConsulting.TalentSuite.Projects.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TalentConsulting.TalentSuite.Projects.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TalentConsulting.TalentSuite.Projects.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TalentConsulting.TalentSuite.Projects.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

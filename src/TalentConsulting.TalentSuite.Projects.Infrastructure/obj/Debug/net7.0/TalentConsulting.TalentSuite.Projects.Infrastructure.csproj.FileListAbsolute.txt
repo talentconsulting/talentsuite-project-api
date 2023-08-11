@@ -1,0 +1,17 @@
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\bin\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Infrastructure.deps.json
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\bin\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Infrastructure.dll
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\bin\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Infrastructure.pdb
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\bin\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Common.dll
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\bin\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Core.dll
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\bin\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Core.pdb
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\bin\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Common.pdb
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Infrastructure.csproj.AssemblyReference.cache
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Infrastructure.AssemblyInfoInputs.cache
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Infrastructure.AssemblyInfo.cs
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Infrastructure.csproj.CopyComplete
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Infrastructure.dll
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\obj\Debug\net7.0\refint\TalentConsulting.TalentSuite.Projects.Infrastructure.dll
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Infrastructure.pdb
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\obj\Debug\net7.0\ref\TalentConsulting.TalentSuite.Projects.Infrastructure.dll

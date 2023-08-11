@@ -1,0 +1,12 @@
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\bin\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Common.deps.json
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\bin\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Common.dll
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\bin\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Common.pdb
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Common.csproj.AssemblyReference.cache
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Common.AssemblyInfoInputs.cache
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Common.AssemblyInfo.cs
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Common.csproj.CoreCompileInputs.cache
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Common.dll
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\obj\Debug\net7.0\refint\TalentConsulting.TalentSuite.Projects.Common.dll
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Common.pdb
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\obj\Debug\net7.0\ref\TalentConsulting.TalentSuite.Projects.Common.dll
