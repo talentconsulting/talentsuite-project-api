@@ -54,9 +54,7 @@ paths:
         200:
           description: OK
           schema:
-            type: array
-            items:
-              $ref: "#/definitions/projectResponse"
+            $ref: "#/definitions/projectListResponse"
     post: 
       produces:
         - application/json
@@ -402,6 +400,16 @@ definitions:
       contractDetails: 
         type: string
   
+  projectListResponse:
+    type: object
+    properties: 
+      pageDetail:
+        $ref: "#/definitions/pageInfo"
+      reports:
+        type: array
+        items:
+          $ref: "#/definitions/projectResponse"
+
   projectResponse:
     allOf:
       - $ref: "#/definitions/projectRequest"
