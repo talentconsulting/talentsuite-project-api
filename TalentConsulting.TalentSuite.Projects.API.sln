@@ -15,9 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalentConsulting.TalentSuit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalentConsulting.TalentSuite.Projects.Common", "src\TalentConsulting.TalentSuite.Projects.Common\TalentConsulting.TalentSuite.Projects.Common.csproj", "{4B4D154A-83B2-447F-BCAD-52F14EF98B4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentConsulting.TalentSuite.Projects.FunctionalTests", "tests\TalentConsulting.TalentSuite.Projects.FunctionalTests\TalentConsulting.TalentSuite.Projects.FunctionalTests.csproj", "{D1FD5940-D499-458D-BA24-9BC62D084939}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalentConsulting.TalentSuite.Projects.FunctionalTests", "tests\TalentConsulting.TalentSuite.Projects.FunctionalTests\TalentConsulting.TalentSuite.Projects.FunctionalTests.csproj", "{D1FD5940-D499-458D-BA24-9BC62D084939}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentConsulting.TalentSuite.Projects.UnitTests", "TalentConsulting.TalentSuite.Projects.UnitTests\TalentConsulting.TalentSuite.Projects.UnitTests.csproj", "{B6274C75-4F50-471D-A2BA-5A2FD342750D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalentConsulting.TalentSuite.Projects.UnitTests", "tests\TalentConsulting.TalentSuite.Projects.UnitTests\TalentConsulting.TalentSuite.Projects.UnitTests.csproj", "{DC322CAC-29AD-4759-99D1-B23C99979526}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +45,10 @@ Global
 		{D1FD5940-D499-458D-BA24-9BC62D084939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1FD5940-D499-458D-BA24-9BC62D084939}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1FD5940-D499-458D-BA24-9BC62D084939}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B6274C75-4F50-471D-A2BA-5A2FD342750D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6274C75-4F50-471D-A2BA-5A2FD342750D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6274C75-4F50-471D-A2BA-5A2FD342750D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6274C75-4F50-471D-A2BA-5A2FD342750D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC322CAC-29AD-4759-99D1-B23C99979526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC322CAC-29AD-4759-99D1-B23C99979526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC322CAC-29AD-4759-99D1-B23C99979526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC322CAC-29AD-4759-99D1-B23C99979526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,7 +59,7 @@ Global
 		{D3A0623E-96C7-4524-B444-0A4FF0EEF1A2} = {5A9DDB37-1F93-4B2D-8C50-DE9D1AAFBBC1}
 		{4B4D154A-83B2-447F-BCAD-52F14EF98B4F} = {5A9DDB37-1F93-4B2D-8C50-DE9D1AAFBBC1}
 		{D1FD5940-D499-458D-BA24-9BC62D084939} = {1BC416CF-9AAB-4415-950D-A5BC83D50B5B}
-		{B6274C75-4F50-471D-A2BA-5A2FD342750D} = {1BC416CF-9AAB-4415-950D-A5BC83D50B5B}
+		{DC322CAC-29AD-4759-99D1-B23C99979526} = {1BC416CF-9AAB-4415-950D-A5BC83D50B5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7C560997-30BD-4E81-BB14-65802CC8ABC4}

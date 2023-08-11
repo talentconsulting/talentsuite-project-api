@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\TalentConsulting.TalentSuite.Projects.API.props" />
-</Project>
