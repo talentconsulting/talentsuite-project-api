@@ -22,7 +22,6 @@
     <Folder Include="Entities\" />
     <Folder Include="Helpers\" />
     <Folder Include="Infrastructure\" />
-    <Folder Include="Interfaces\Commands\" />
   </ItemGroup>
 
 </Project>
