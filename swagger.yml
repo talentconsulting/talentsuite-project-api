@@ -1,0 +1,441 @@
+swagger: "2.0"
+info:
+  title: Project  API
+  description: This service contains the API for managing projects
+  version: 1.0.0
+host: api.projects.talentsuite.uk
+schemes:
+  - https
+paths:
+  /health:
+    get:
+      summary: Health endpoint which tests all integrations for connectivity.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: Information json returned
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/health"
+      
+  /info:
+    get:
+      summary: information endpoint.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: Information json returned
+          schema:
+            $ref: "#/definitions/info"
+
+  /readiness:
+    get:
+      summary: Returns whether the service is ready
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+
+  /projects:
+    get:
+      produces:
+        - application/json
+      parameters:
+        - in: query
+          name: clientId
+          description: The client to filter on
+          type: string
+          required: false
+      responses:
+        200:
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/projectResponse"
+    post: 
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: The project to create.
+          schema:
+            $ref: "#/definitions/projectRequest"
+      responses:
+        201:
+          description: Created
+          headers:
+            location:
+              description: location of the resource created
+              type: string
+              format: uri
+  
+  /projects/{projectId}:
+    get:
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: projectId
+          description: The id of the project to update
+          type: string
+          required: true
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: "#/definitions/projectResponse"
+    put: 
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: The project to update
+          schema:
+            $ref: "#/definitions/projectRequest"
+        - in: path
+          name: projectId
+          description: The id of the project to update
+          type: string
+          required: true
+      responses:
+        404:
+          description: The client is not found
+        200:
+          description: Updated
+          headers:
+            location:
+              description: location of the resource created
+              type: string
+              format: uri
+    delete:
+      description: This method will soft delete all orphaned records for sows
+      produces  :
+        - application/json
+      parameters:
+        - in: path
+          name: projectId
+          description: The id of the project to update
+          type: string
+          required: true
+      responses:
+        404:
+          description: The client is not found
+        200:
+          description: Deleted
+
+  /projects/{projectId}/sows:
+    get:
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: projectId
+          description: The id of the project to update
+          type: string
+          required: true
+      responses:
+        200:
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/sowResponse"
+    post: 
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: The client to create.
+          schema:
+            $ref: "#/definitions/sowRequest"
+        - in: path
+          name: projectId
+          description: The id of the project to update
+          type: string
+          required: true
+      responses:
+        201:
+          description: Created
+          headers:
+            location:
+              description: location of the resource created
+              type: string
+              format: uri
+  
+  /projects/{projectId}/sows/{sowId}:
+    get:
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: projectId
+          description: The id of the project to get
+          type: string
+          required: true
+        - in: path
+          name: sowId
+          description: The id of the sow to get
+          type: string
+          required: true
+      responses:
+        200:
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/sowResponse"
+    put: 
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: The project to update
+          schema:
+            $ref: "#/definitions/projectRequest"
+        - in: path
+          name: projectId
+          description: The id of the project to update
+          type: string
+          required: true
+        - in: path
+          name: sowId
+          description: The id of the sow to update
+          type: string
+          required: true
+      responses:
+        404:
+          description: The sow is not found
+        200:
+          description: Updated
+          headers:
+            location:
+              description: location of the resource created
+              type: string
+              format: uri
+
+    delete:
+      produces  :
+        - application/json
+      parameters:
+        - in: path
+          name: projectId
+          description: The id of the project to update
+          type: string
+          required: true
+        - in: path
+          name: sowId
+          description: The id of the sow to update
+          type: string
+          required: true
+      responses:
+        404:
+          description: The client is not found
+        200:
+          description: Deleted
+
+  /projects/{projectId}/sows/{sowId}/files:
+    get:
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: projectId
+          description: The id of the project to update
+          type: string
+          required: true
+        - in: path
+          name: sowId
+          description: The id of the sow to update
+          type: string
+          required: true
+      responses:
+        200:
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/sowFileResponse"
+    post:
+      summary: Uploads a file.
+      consumes:
+      - multipart/form-data
+      parameters:
+      - in: formData
+        name: fileData
+        type: file
+        description: The file data to upload
+        required: true
+      - in: formData
+        name: filename
+        type: string
+        required: true
+        description: Name of the file to upload
+      - in: path
+        name: projectId
+        description: The id of the project to update
+        type: string
+        required: true
+      - in: path
+        name: sowId
+        description: The id of the sow to update
+        type: string
+        required: true
+        
+      responses:
+        201:
+          description: Created
+          headers:
+            location:
+              description: location of the resource created
+              type: string
+              format: uri
+    
+  /projects/{projectId}/sows/{sowId}/files/{fileId}:
+    get:
+      produces:
+        - application/pdf
+        - application/msword
+      parameters:
+        - in: path
+          name: projectId
+          description: The id of the project to update
+          type: string
+          required: true
+        - in: path
+          name: sowId
+          description: The id of the sow to update
+          type: string
+          required: true
+        - in: path
+          name: fileId
+          description: The id of the file to fetch
+          type: string
+          required: true
+      responses:
+        404:
+          description: file not found
+        200:
+          description: OK
+          schema:
+            $ref: "#/definitions/sowFileResponse"
+    delete:
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: projectId
+          description: The id of the project to update
+          type: string
+          required: true
+        - in: path
+          name: sowId
+          description: The id of the sow to update
+          type: string
+          required: true
+        - in: path
+          name: fileId
+          description: The id of the file to fetch
+          type: string
+          required: true
+      responses:
+        404:
+          description: file not found
+        200:
+          description: OK
+
+definitions:
+  info:
+    type: object
+    properties: 
+      version:
+        type: string
+  
+  health:
+    type: object
+    properties: 
+      name: 
+        type: string
+      healthy:
+        type: boolean
+
+  pageInfo:
+    type: object
+    properties: 
+      totalCount:
+        type: number
+      page: 
+        type: number
+      pageSize: 
+        type: number
+      first:
+        type: boolean
+      last:
+        type: boolean
+  
+  projectRequest:
+    type: object
+    properties: 
+      created: 
+        type: string
+        format: date-time
+      name: 
+        type: string
+      reference: 
+        type: string
+      clientId: 
+        type: string
+      startDate: 
+        type: string
+        format: date
+      endDate: 
+        type: string
+        format: date
+      contractDetails: 
+        type: string
+  
+  projectResponse:
+    allOf:
+      - $ref: "#/definitions/projectRequest"
+    properties: 
+      id: 
+        type: string
+  
+  sowRequest:
+    type: object
+    properties: 
+      projectId: 
+        type: string
+      created: 
+        type: string
+        format: date-time
+      isChangeRequest:
+        type: boolean
+      startDate:
+        type: string
+        format: date
+      endDate:
+        type: string
+        format: date
+    
+  sowResponse:
+    allOf:
+      - $ref: "#/definitions/sowRequest"
+    properties: 
+      id: 
+        type: string
+    
+  sowFileResponse:
+    allOf:
+      - $ref: "#/definitions/sowFileResponse"
+    properties: 
+      id: 
+        type: string
