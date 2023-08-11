@@ -22,7 +22,7 @@ public class WhenUsingProjectsApiUnitTests : BaseWhenUsingApiUnitTests
         var request = new HttpRequestMessage
         {
             Method = HttpMethod.Get,
-            RequestUri = new Uri(_client.BaseAddress + "api/projects?pageNumber=1&pageSize=10"),
+            RequestUri = new Uri(_client!.BaseAddress + "api/projects?pageNumber=1&pageSize=10"),
         };
 
         using var response = await _client.SendAsync(request);
@@ -44,7 +44,7 @@ public class WhenUsingProjectsApiUnitTests : BaseWhenUsingApiUnitTests
 #endif
     public async Task ThenTheProjectIsCreated()
     {
-        var project = new ProjectDto(Guid.NewGuid().ToString(), "0121 333 4444", "Social work CPD", "con_24sds", new DateTime(2023, 11, 01), new DateTime(2023, 03, 31),
+        var project = new ProjectDto(Guid.NewGuid().ToString(), "0121 333 4444", "Social work CPD", "con_24sds", new DateTime(2023, 11, 01, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
             new List<ClientProjectDto>(),
             new List<ContactDto>(),
             new List<ReportDto>(),
@@ -55,7 +55,7 @@ public class WhenUsingProjectsApiUnitTests : BaseWhenUsingApiUnitTests
         var request = new HttpRequestMessage
         {
             Method = HttpMethod.Post,
-            RequestUri = new Uri(_client.BaseAddress + "api/projects"),
+            RequestUri = new Uri(_client!.BaseAddress + "api/projects"),
             Content = new StringContent(JsonConvert.SerializeObject(project), Encoding.UTF8, "application/json"),
         };
 
@@ -81,7 +81,7 @@ public class WhenUsingProjectsApiUnitTests : BaseWhenUsingApiUnitTests
 #endif
     public async Task ThenTheProjectIsUpdated()
     {
-        var project = new ProjectDto(Guid.NewGuid().ToString(), "0121 333 4444", "Social work CPD", "con_24sds", new DateTime(2023, 11, 01), new DateTime(2023, 03, 31),
+        var project = new ProjectDto(Guid.NewGuid().ToString(), "0121 333 4444", "Social work CPD", "con_24sds", new DateTime(2023, 11, 01, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
             new List<ClientProjectDto>(),
             new List<ContactDto>(),
             new List<ReportDto>(),
@@ -91,7 +91,7 @@ public class WhenUsingProjectsApiUnitTests : BaseWhenUsingApiUnitTests
         var request = new HttpRequestMessage
         {
             Method = HttpMethod.Post,
-            RequestUri = new Uri(_client.BaseAddress + "api/projects"),
+            RequestUri = new Uri(_client!.BaseAddress + "api/projects"),
             Content = new StringContent(JsonConvert.SerializeObject(project), Encoding.UTF8, "application/json"),
         };
 
@@ -105,7 +105,7 @@ public class WhenUsingProjectsApiUnitTests : BaseWhenUsingApiUnitTests
 
         await response.Content.ReadAsStringAsync();
 
-        var updatedproject = new ProjectDto(project.Id, "0121 333 5555", "Social work CPD1", "con_24sds1", new DateTime(2023, 11, 01), new DateTime(2023, 03, 31),
+        var updatedproject = new ProjectDto(project.Id, "0121 333 5555", "Social work CPD1", "con_24sds1", new DateTime(2023, 11, 01, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
             new List<ClientProjectDto>(),
             new List<ContactDto>(),
             new List<ReportDto>(),

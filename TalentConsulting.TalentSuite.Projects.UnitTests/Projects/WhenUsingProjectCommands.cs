@@ -186,7 +186,7 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
 
     public Project GetTestProject()
     {
-        return new Project(_projectId, "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 01), new DateTime(2023, 03, 31),
+        return new Project(_projectId, "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 01, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
             new List<ClientProject>()
             {
                 new ClientProject("d0ec8781-28ed-43dc-8840-e18ac1d255e8",_clientId,_projectId)
@@ -223,7 +223,7 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
             new RiskDto(_riskId, _reportId, "Risk Details", "Risk Mitigation", "Risk Status" )
         };
 
-        return new ProjectDto(projectId, "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 01), new DateTime(2023, 03, 31),
+        return new ProjectDto(projectId, "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 01, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
             new List<ClientProjectDto>()
             {
                 new ClientProjectDto("d0ec8781-28ed-43dc-8840-e18ac1d255e8",_clientId,projectId)

@@ -16,7 +16,7 @@ public class WhenValidatingCreateProject : BaseTestValidation
     {
         //Arrange
         var validator = new CreateProjectCommandValidator();
-        var testModel = new CreateProjectCommand(new ProjectDto(_projectId, "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 01), new DateTime(2023, 03, 31),
+        var testModel = new CreateProjectCommand(new ProjectDto(_projectId, "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 01, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
             new List<ClientProjectDto>(),
             new List<ContactDto>(),
             new List<ReportDto>(),
@@ -36,7 +36,7 @@ public class WhenValidatingCreateProject : BaseTestValidation
     {
         //Arrange
         var validator = new CreateProjectCommandValidator();
-        var testModel = new CreateProjectCommand(new ProjectDto(id, "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 01), new DateTime(2023, 03, 31),
+        var testModel = new CreateProjectCommand(new ProjectDto(id, "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 01, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
             new List<ClientProjectDto>(),
             new List<ContactDto>(),
             new List<ReportDto>(),
@@ -46,7 +46,7 @@ public class WhenValidatingCreateProject : BaseTestValidation
         var result = validator.Validate(testModel);
 
         //Assert
-        result.Errors.Any(x => x.PropertyName == "ProjectDto.Id").Should().BeTrue();
+        result.Errors.Exists(x => x.PropertyName == "ProjectDto.Id").Should().BeTrue();
     }
 
     [Fact]
@@ -54,7 +54,7 @@ public class WhenValidatingCreateProject : BaseTestValidation
     {
         //Arrange
         var validator = new CreateProjectCommandValidator();
-        var testModel = new CreateProjectCommand(new ProjectDto(_projectId, "0121 111 2222", default!, "con_23sds", new DateTime(2023, 10, 01), new DateTime(2023, 03, 31),
+        var testModel = new CreateProjectCommand(new ProjectDto(_projectId, "0121 111 2222", default!, "con_23sds", new DateTime(2023, 10, 01, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
             new List<ClientProjectDto>(),
             new List<ContactDto>(),
             new List<ReportDto>(),
@@ -64,7 +64,7 @@ public class WhenValidatingCreateProject : BaseTestValidation
         var result = validator.Validate(testModel);
 
         //Assert
-        result.Errors.Any(x => x.PropertyName == "ProjectDto.Name").Should().BeTrue();
+        result.Errors.Exists(x => x.PropertyName == "ProjectDto.Name").Should().BeTrue();
     }
 
     [Fact]
@@ -72,7 +72,7 @@ public class WhenValidatingCreateProject : BaseTestValidation
     {
         //Arrange
         var validator = new CreateProjectCommandValidator();
-        var testModel = new CreateProjectCommand(new ProjectDto(_projectId, default!, "Social work CPD", "con_23sds", new DateTime(2023, 10, 01), new DateTime(2023, 03, 31),
+        var testModel = new CreateProjectCommand(new ProjectDto(_projectId, default!, "Social work CPD", "con_23sds", new DateTime(2023, 10, 01, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
             new List<ClientProjectDto>(),
             new List<ContactDto>(),
             new List<ReportDto>(),
@@ -82,14 +82,14 @@ public class WhenValidatingCreateProject : BaseTestValidation
         var result = validator.Validate(testModel);
 
         //Assert
-        result.Errors.Any(x => x.PropertyName == "ProjectDto.ContactNumber").Should().BeTrue();
+        result.Errors.Exists(x => x.PropertyName == "ProjectDto.ContactNumber").Should().BeTrue();
     }
     [Fact]
     public void ThenShouldErrorWhenModelHasNoReferance()
     {
         //Arrange
         var validator = new CreateProjectCommandValidator();
-        var testModel = new CreateProjectCommand(new ProjectDto(_projectId, "0121 111 2222", "Social work CPD", default!, new DateTime(2023, 10, 01), new DateTime(2023, 03, 31),
+        var testModel = new CreateProjectCommand(new ProjectDto(_projectId, "0121 111 2222", "Social work CPD", default!, new DateTime(2023, 10, 01, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
             new List<ClientProjectDto>(),
             new List<ContactDto>(),
             new List<ReportDto>(),
@@ -99,7 +99,7 @@ public class WhenValidatingCreateProject : BaseTestValidation
         var result = validator.Validate(testModel);
 
         //Assert
-        result.Errors.Any(x => x.PropertyName == "ProjectDto.Reference").Should().BeTrue();
+        result.Errors.Exists(x => x.PropertyName == "ProjectDto.Reference").Should().BeTrue();
     }
 
 }

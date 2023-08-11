@@ -21,6 +21,7 @@ public abstract class ValueObject : ValueObjectBase, IComparable, IComparable<Va
         return GetEqualityComponents().SequenceEqual(valueObject.GetEqualityComponents());
     }
 
+#pragma warning disable S2328
     public override int GetHashCode()
     {
         if (!_cachedHashCode.HasValue)
@@ -37,6 +38,8 @@ public abstract class ValueObject : ValueObjectBase, IComparable, IComparable<Va
 
         return _cachedHashCode.Value;
     }
+
+#pragma warning restore S2328
 
     public int CompareTo(ValueObject? other)
     {

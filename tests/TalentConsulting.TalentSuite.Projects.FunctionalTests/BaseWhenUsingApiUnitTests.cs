@@ -9,6 +9,7 @@ using TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repositor
 
 namespace TalentConsulting.TalentSuite.Projects.FunctionalTests;
 
+#pragma warning disable S3881
 public abstract class BaseWhenUsingApiUnitTests : IDisposable
 {
     protected readonly HttpClient? _client;
@@ -37,14 +38,6 @@ public abstract class BaseWhenUsingApiUnitTests : IDisposable
                .Build();
 
             _configuration = config;
-
-            //var config = new ConfigurationBuilder()
-            //.AddInMemoryCollection(new List<KeyValuePair<string, string?>>()
-            //{
-            //    new KeyValuePair<string, string?>("UseDbType", "UseInMemoryDatabase"),
-            //    new KeyValuePair<string, string?>("JWT:Secret", "JWTAuthenticationHIGHsecuredPasswordVVVp1OH7Xzyr")
-            //})
-            //.Build();
 
             List<Claim> authClaims = new List<Claim> { new Claim(ClaimTypes.Role, "TalentConsultingUser") };
             _token = CreateToken(authClaims, config);
@@ -147,3 +140,5 @@ public abstract class BaseWhenUsingApiUnitTests : IDisposable
         return false;
     }
 }
+
+#pragma warning restore S3881
