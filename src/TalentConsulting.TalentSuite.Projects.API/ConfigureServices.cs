@@ -6,7 +6,7 @@ using TalentConsulting.TalentSuite.Projects.Common.Interfaces;
 using TalentConsulting.TalentSuite.Projects.Core;
 using TalentConsulting.TalentSuite.Projects.Infrastructure.Service;
 
-namespace TalentConsulting.TalentSuite.Clients.API;
+namespace TalentConsulting.TalentSuite.Projects.API;
 
 public static class ConfigureServices
 {

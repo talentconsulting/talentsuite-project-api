@@ -1,0 +1,472 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\TalentConsulting.TalentSuite.Projects.UnitTests\\TalentConsulting.TalentSuite.Projects.UnitTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.API\\TalentConsulting.TalentSuite.Projects.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.API\\TalentConsulting.TalentSuite.Projects.API.csproj",
+        "projectName": "TalentConsulting.TalentSuite.Projects.API",
+        "projectPath": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.API\\TalentConsulting.TalentSuite.Projects.API.csproj",
+        "packagesPath": "C:\\Users\\Martin.Belton\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Martin.Belton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Projects\\libs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Infrastructure\\TalentConsulting.TalentSuite.Projects.Infrastructure.csproj": {
+                "projectPath": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Infrastructure\\TalentConsulting.TalentSuite.Projects.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.21.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Serilog.Sinks.ApplicationInsights": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Common\\TalentConsulting.TalentSuite.Projects.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Common\\TalentConsulting.TalentSuite.Projects.Common.csproj",
+        "projectName": "TalentConsulting.TalentSuite.Projects.Common",
+        "projectPath": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Common\\TalentConsulting.TalentSuite.Projects.Common.csproj",
+        "packagesPath": "C:\\Users\\Martin.Belton\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Martin.Belton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Projects\\libs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Ardalis.GuardClauses": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Ardalis.Specification": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Core\\TalentConsulting.TalentSuite.Projects.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Core\\TalentConsulting.TalentSuite.Projects.Core.csproj",
+        "projectName": "TalentConsulting.TalentSuite.Projects.Core",
+        "projectPath": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Core\\TalentConsulting.TalentSuite.Projects.Core.csproj",
+        "packagesPath": "C:\\Users\\Martin.Belton\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Martin.Belton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Projects\\libs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Common\\TalentConsulting.TalentSuite.Projects.Common.csproj": {
+                "projectPath": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Common\\TalentConsulting.TalentSuite.Projects.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Infrastructure\\TalentConsulting.TalentSuite.Projects.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Infrastructure\\TalentConsulting.TalentSuite.Projects.Infrastructure.csproj",
+        "projectName": "TalentConsulting.TalentSuite.Projects.Infrastructure",
+        "projectPath": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Infrastructure\\TalentConsulting.TalentSuite.Projects.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Martin.Belton\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Martin.Belton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Projects\\libs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Core\\TalentConsulting.TalentSuite.Projects.Core.csproj": {
+                "projectPath": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.Core\\TalentConsulting.TalentSuite.Projects.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Ardalis.Specification.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\TalentConsulting.TalentSuite.Projects.UnitTests\\TalentConsulting.TalentSuite.Projects.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\TalentConsulting.TalentSuite.Projects.UnitTests\\TalentConsulting.TalentSuite.Projects.UnitTests.csproj",
+        "projectName": "TalentConsulting.TalentSuite.Projects.UnitTests",
+        "projectPath": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\TalentConsulting.TalentSuite.Projects.UnitTests\\TalentConsulting.TalentSuite.Projects.UnitTests.csproj",
+        "packagesPath": "C:\\Users\\Martin.Belton\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\TalentConsulting.TalentSuite.Projects.UnitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Martin.Belton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Projects\\libs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.API\\TalentConsulting.TalentSuite.Projects.API.csproj": {
+                "projectPath": "C:\\Projects\\TalentConsulting\\talentsuite-project-api\\src\\TalentConsulting.TalentSuite.Projects.API\\TalentConsulting.TalentSuite.Projects.API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.11.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.7.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.2, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

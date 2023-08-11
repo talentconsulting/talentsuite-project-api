@@ -8,7 +8,7 @@ using TalentConsulting.TalentSuite.Projects.API.Endpoints;
 using TalentConsulting.TalentSuite.Projects.Infrastructure;
 using TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository;
 
-namespace TalentConsulting.TalentSuite.Clients.API;
+namespace TalentConsulting.TalentSuite.Projects.API;
 
 public static class StartupExtensions
 {

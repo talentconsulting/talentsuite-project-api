@@ -1,6 +1,6 @@
 using Serilog;
 
-namespace TalentConsulting.TalentSuite.Clients.API;
+namespace TalentConsulting.TalentSuite.Projects.API;
 
 public class Program
 {
