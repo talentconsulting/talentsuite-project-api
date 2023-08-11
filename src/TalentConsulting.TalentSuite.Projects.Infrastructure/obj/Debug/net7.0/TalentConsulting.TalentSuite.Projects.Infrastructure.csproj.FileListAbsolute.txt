@@ -15,3 +15,5 @@ C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.Talent
 C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\obj\Debug\net7.0\refint\TalentConsulting.TalentSuite.Projects.Infrastructure.dll
 C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Infrastructure.pdb
 C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\obj\Debug\net7.0\ref\TalentConsulting.TalentSuite.Projects.Infrastructure.dll
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\bin\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Infrastructure.runtimeconfig.json
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.Infrastructure.genruntimeconfig.cache
