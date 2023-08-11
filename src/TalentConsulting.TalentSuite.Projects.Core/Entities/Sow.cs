@@ -20,6 +20,7 @@ public class Sow : EntityBase<string>, IAggregateRoot
         ProjectId = projectid;
     }
 
+    //ToDo Add Sow Files table
     public byte[] File { get; set; } = null!;
     public bool IsChangeRequest { get; set; }
     public DateTime SowStartDate { get; set; }

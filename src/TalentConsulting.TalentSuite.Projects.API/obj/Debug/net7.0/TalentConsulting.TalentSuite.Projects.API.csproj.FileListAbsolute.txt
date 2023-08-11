@@ -166,3 +166,4 @@ C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.Talent
 C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Annotations.dll
 C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\bin\Debug\net7.0\System.Diagnostics.PerformanceCounter.dll
 C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.API.MvcApplicationPartsAssemblyInfo.cs
