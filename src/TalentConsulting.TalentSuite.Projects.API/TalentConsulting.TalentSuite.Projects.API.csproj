@@ -27,8 +27,4 @@
     <ProjectReference Include="..\TalentConsulting.TalentSuite.Projects.Infrastructure\TalentConsulting.TalentSuite.Projects.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
-
 </Project>

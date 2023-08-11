@@ -184,7 +184,7 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
 
     }
 
-    public Project GetTestProject()
+    public static Project GetTestProject()
     {
         return new Project(_projectId, "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 01, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
             new List<ClientProject>()
@@ -204,9 +204,9 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
                 }
                 )
             },
-            new List<Sow>()
+            new List<Core.Entities.Sow>()
             {
-                new Sow("946c4c15-913c-42e1-947d-b813b90f4d81", DateTime.UtcNow, new byte[] { 1 }, true, DateTime.UtcNow, DateTime.UtcNow.AddDays(1), _projectId)
+                new Core.Entities.Sow("946c4c15-913c-42e1-947d-b813b90f4d81", DateTime.UtcNow, new byte[] { 1 }, true, DateTime.UtcNow, DateTime.UtcNow.AddDays(1), _projectId)
             });
     }
 

@@ -65,22 +65,24 @@ public class ApplicationDbContextInitialiser
         if (_context.Projects.Any())
             return;
 
-        _context.Projects.Add(new Project("86b610ee-e866-4749-9f10-4a5c59e96f2f", "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 1, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
-            new List<ClientProject>(),
-            new List<Contact>(),
-            new List<Report>(),
-            new List<Sow>()));
+        if (_context.Database.IsInMemory() || _context.Database.IsSqlite())
+        {
+            _context.Projects.Add(new Project("86b610ee-e866-4749-9f10-4a5c59e96f2f", "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 1, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
+                new List<ClientProject>(),
+                new List<Contact>(),
+                new List<Report>(),
+                new List<Sow>()));
 
-        _context.Contacts.Add(new Contact("03a33a03-a98d-4946-8e8f-05cbc7a949b6", "Ron Weasley", "ron@weasley.com", true, "86b610ee-e866-4749-9f10-4a5c59e96f2f"));
+            _context.Contacts.Add(new Contact("03a33a03-a98d-4946-8e8f-05cbc7a949b6", "Ron Weasley", "ron@weasley.com", true, "86b610ee-e866-4749-9f10-4a5c59e96f2f"));
 
-        _context.Clients.AddRange(Clients().ToArray());
+            _context.Clients.AddRange(Clients().ToArray());
 
-        _context.ProjectRoles.AddRange(ProjectRoles().ToArray());
-        _context.UserGroups.AddRange(UserGroups().ToArray());
-        _context.Users.AddRange(Users().ToArray());
-        
-        
-        await _context.SaveChangesAsync();
+            _context.ProjectRoles.AddRange(ProjectRoles().ToArray());
+
+            await _context.SaveChangesAsync();
+        }
+
+            
     }
 
     private static List<Client> Clients() 
@@ -103,24 +105,7 @@ public class ApplicationDbContextInitialiser
         };
     }
 
-    private static List<UserGroup> UserGroups()
-    {
-        return new List<UserGroup>
-        {
-            new UserGroup("2a91939a-57fd-4049-afa9-88e547c5bd92", "Global Administrator", true),
-            new UserGroup("3a38a77c-3bda-4950-8802-e1b636c4c29f", "Project Admin", true),
-            new UserGroup("768aa546-ec03-4663-b7f4-26569932b2af", "User", false),
-        };
-    }
-
-    private static List<User> Users()
-    {
-        return new List<User>
-        {
-            new User("93e0f88c-691f-4373-8abf-3f895bddec60", "Joe", "Blogs", "joe.blogs@email.com", "768aa546-ec03-4663-b7f4-26569932b2af", Reports().Where(x => x.UserId == "93e0f88c-691f-4373-8abf-3f895bddec60").ToList()),
-            new User("8ed672f0-5146-4ecc-89a0-6a36c1f5db71", "John", "Brown", "john.brown@email.com", "768aa546-ec03-4663-b7f4-26569932b2af", Reports().Where(x => x.UserId == "8ed672f0-5146-4ecc-89a0-6a36c1f5db71").ToList()),
-        };
-    }
+    
 
     private static List<Report> Reports()
     {

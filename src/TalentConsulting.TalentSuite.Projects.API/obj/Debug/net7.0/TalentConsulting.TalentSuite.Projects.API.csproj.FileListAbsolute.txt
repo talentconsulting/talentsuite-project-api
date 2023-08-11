@@ -48,7 +48,6 @@ C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.Talent
 C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.API.AssemblyInfoInputs.cache
 C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.API.AssemblyInfo.cs
 C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.API.csproj.CoreCompileInputs.cache
-C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\obj\Debug\net7.0\TalentConsulting.TalentSuite.Projects.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\obj\Debug\net7.0\staticwebassets\msbuild.TalentConsulting.TalentSuite.Projects.API.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\obj\Debug\net7.0\staticwebassets\msbuild.build.TalentConsulting.TalentSuite.Projects.API.props

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.46649999999999997" branch-rate="0.2482" version="1.9" timestamp="1691749248" lines-covered="887" lines-valid="1901" branches-covered="72" branches-valid="290">
+<coverage line-rate="0.41490000000000005" branch-rate="0.2483" version="1.9" timestamp="1691761700" lines-covered="778" lines-valid="1875" branches-covered="75" branches-valid="302">
   <sources>
     <source>C:\</source>
   </sources>
   <packages>
-    <package name="TalentConsulting.TalentSuite.Projects.API" line-rate="0.5166" branch-rate="0.272" complexity="158">
+    <package name="TalentConsulting.TalentSuite.Projects.API" line-rate="0.43320000000000003" branch-rate="0.2638" complexity="182">
       <classes>
         <class name="TalentConsulting.TalentSuite.Projects.API.ConfigureServices" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\ConfigureServices.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
@@ -16,7 +16,7 @@
                 <line number="17" hits="3" branch="False" />
                 <line number="19" hits="3" branch="False" />
                 <line number="20" hits="3" branch="False" />
-                <line number="21" hits="11988" branch="False" />
+                <line number="21" hits="7557" branch="False" />
                 <line number="22" hits="3" branch="False" />
                 <line number="23" hits="6" branch="False" />
                 <line number="25" hits="3" branch="False" />
@@ -35,7 +35,7 @@
             <line number="17" hits="3" branch="False" />
             <line number="19" hits="3" branch="False" />
             <line number="20" hits="3" branch="False" />
-            <line number="21" hits="11988" branch="False" />
+            <line number="21" hits="7557" branch="False" />
             <line number="22" hits="3" branch="False" />
             <line number="23" hits="6" branch="False" />
             <line number="25" hits="3" branch="False" />
@@ -166,7 +166,7 @@
             <line number="48" hits="3" branch="False" />
           </lines>
         </class>
-        <class name="TalentConsulting.TalentSuite.Projects.API.StartupExtensions" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\StartupExtensions.cs" line-rate="0.9047" branch-rate="0.5" complexity="10">
+        <class name="TalentConsulting.TalentSuite.Projects.API.StartupExtensions" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\StartupExtensions.cs" line-rate="0.9062" branch-rate="0.5" complexity="10">
           <methods>
             <method name="ConfigureHost" signature="(Microsoft.AspNetCore.Builder.WebApplicationBuilder)" line-rate="1" branch-rate="0.5" complexity="4">
               <lines>
@@ -196,7 +196,7 @@
                 <line number="32" hits="3" branch="False" />
               </lines>
             </method>
-            <method name="ConfigureServices" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.Boolean)" line-rate="0.8723000000000001" branch-rate="0.5" complexity="6">
+            <method name="ConfigureServices" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.Boolean)" line-rate="0.875" branch-rate="0.5" complexity="6">
               <lines>
                 <line number="35" hits="3" branch="False" />
                 <line number="36" hits="3" branch="False" />
@@ -255,8 +255,9 @@
                 <line number="85" hits="3" branch="False" />
                 <line number="86" hits="3" branch="False" />
                 <line number="87" hits="3" branch="False" />
-                <line number="89" hits="3" branch="False" />
+                <line number="88" hits="3" branch="False" />
                 <line number="90" hits="3" branch="False" />
+                <line number="91" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
@@ -342,128 +343,261 @@
             <line number="85" hits="3" branch="False" />
             <line number="86" hits="3" branch="False" />
             <line number="87" hits="3" branch="False" />
-            <line number="89" hits="3" branch="False" />
+            <line number="88" hits="3" branch="False" />
             <line number="90" hits="3" branch="False" />
+            <line number="91" hits="3" branch="False" />
           </lines>
         </class>
         <class name="TalentConsulting.TalentSuite.Projects.API.StartupExtensions/&lt;ConfigureWebApplication&gt;d__2" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\StartupExtensions.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="93" hits="3" branch="False" />
                 <line number="94" hits="3" branch="False" />
-                <line number="97" hits="3" branch="True" condition-coverage="100% (2/2)">
+                <line number="95" hits="3" branch="False" />
+                <line number="98" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="49" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="98" hits="3" branch="False" />
                 <line number="99" hits="3" branch="False" />
                 <line number="100" hits="3" branch="False" />
                 <line number="101" hits="3" branch="False" />
-                <line number="103" hits="3" branch="False" />
-                <line number="105" hits="3" branch="False" />
+                <line number="102" hits="3" branch="False" />
+                <line number="104" hits="3" branch="False" />
                 <line number="106" hits="3" branch="False" />
-                <line number="108" hits="3" branch="False" />
-                <line number="110" hits="3" branch="False" />
-                <line number="112" hits="3" branch="False" />
+                <line number="107" hits="3" branch="False" />
+                <line number="109" hits="3" branch="False" />
+                <line number="111" hits="3" branch="False" />
                 <line number="113" hits="3" branch="False" />
+                <line number="114" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="93" hits="3" branch="False" />
             <line number="94" hits="3" branch="False" />
-            <line number="97" hits="3" branch="True" condition-coverage="100% (2/2)">
+            <line number="95" hits="3" branch="False" />
+            <line number="98" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="49" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="98" hits="3" branch="False" />
             <line number="99" hits="3" branch="False" />
             <line number="100" hits="3" branch="False" />
             <line number="101" hits="3" branch="False" />
-            <line number="103" hits="3" branch="False" />
-            <line number="105" hits="3" branch="False" />
+            <line number="102" hits="3" branch="False" />
+            <line number="104" hits="3" branch="False" />
             <line number="106" hits="3" branch="False" />
-            <line number="108" hits="3" branch="False" />
-            <line number="110" hits="3" branch="False" />
-            <line number="112" hits="3" branch="False" />
+            <line number="107" hits="3" branch="False" />
+            <line number="109" hits="3" branch="False" />
+            <line number="111" hits="3" branch="False" />
             <line number="113" hits="3" branch="False" />
+            <line number="114" hits="3" branch="False" />
           </lines>
         </class>
-        <class name="TalentConsulting.TalentSuite.Projects.API.StartupExtensions/&lt;RegisterEndPoints&gt;d__3" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\StartupExtensions.cs" line-rate="0.8" branch-rate="0.6666" complexity="6">
+        <class name="TalentConsulting.TalentSuite.Projects.API.StartupExtensions/&lt;RegisterEndPoints&gt;d__3" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\StartupExtensions.cs" line-rate="0.8181" branch-rate="0.625" complexity="8">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0.8" branch-rate="0.6666" complexity="6">
+            <method name="MoveNext" signature="()" line-rate="0.8181" branch-rate="0.625" complexity="8">
               <lines>
-                <line number="116" hits="3" branch="False" />
                 <line number="117" hits="3" branch="False" />
-                <line number="119" hits="3" branch="False" />
-                <line number="120" hits="3" branch="True" condition-coverage="50% (1/2)">
+                <line number="118" hits="3" branch="False" />
+                <line number="120" hits="3" branch="False" />
+                <line number="121" hits="3" branch="True" condition-coverage="50% (1/2)">
                   <conditions>
-                    <condition number="76" type="jump" coverage="50%" />
+                    <condition number="79" type="jump" coverage="50%" />
                   </conditions>
                 </line>
-                <line number="122" hits="3" branch="False" />
-                <line number="123" hits="3" branch="True" condition-coverage="50% (1/2)">
+                <line number="123" hits="3" branch="False" />
+                <line number="124" hits="3" branch="True" condition-coverage="50% (1/2)">
                   <conditions>
-                    <condition number="122" type="jump" coverage="50%" />
+                    <condition number="125" type="jump" coverage="50%" />
                   </conditions>
                 </line>
                 <line number="126" hits="3" branch="False" />
-                <line number="127" hits="3" branch="True" condition-coverage="100% (2/2)">
+                <line number="127" hits="3" branch="True" condition-coverage="50% (1/2)">
                   <conditions>
-                    <condition number="183" type="jump" coverage="100%" />
+                    <condition number="171" type="jump" coverage="50%" />
                   </conditions>
                 </line>
-                <line number="128" hits="3" branch="False" />
                 <line number="130" hits="3" branch="False" />
-                <line number="131" hits="3" branch="False" />
+                <line number="131" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="232" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
                 <line number="132" hits="3" branch="False" />
-                <line number="133" hits="3" branch="False" />
                 <line number="134" hits="3" branch="False" />
                 <line number="135" hits="3" branch="False" />
-                <line number="136" hits="0" branch="False" />
-                <line number="137" hits="0" branch="False" />
-                <line number="138" hits="0" branch="False" />
-                <line number="139" hits="0" branch="False" />
-                <line number="140" hits="3" branch="False" />
+                <line number="136" hits="3" branch="False" />
+                <line number="137" hits="3" branch="False" />
+                <line number="138" hits="3" branch="False" />
+                <line number="139" hits="3" branch="False" />
+                <line number="140" hits="0" branch="False" />
+                <line number="141" hits="0" branch="False" />
+                <line number="142" hits="0" branch="False" />
+                <line number="143" hits="0" branch="False" />
+                <line number="144" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="116" hits="3" branch="False" />
             <line number="117" hits="3" branch="False" />
-            <line number="119" hits="3" branch="False" />
-            <line number="120" hits="3" branch="True" condition-coverage="50% (1/2)">
+            <line number="118" hits="3" branch="False" />
+            <line number="120" hits="3" branch="False" />
+            <line number="121" hits="3" branch="True" condition-coverage="50% (1/2)">
               <conditions>
-                <condition number="76" type="jump" coverage="50%" />
+                <condition number="79" type="jump" coverage="50%" />
               </conditions>
             </line>
-            <line number="122" hits="3" branch="False" />
-            <line number="123" hits="3" branch="True" condition-coverage="50% (1/2)">
+            <line number="123" hits="3" branch="False" />
+            <line number="124" hits="3" branch="True" condition-coverage="50% (1/2)">
               <conditions>
-                <condition number="122" type="jump" coverage="50%" />
+                <condition number="125" type="jump" coverage="50%" />
               </conditions>
             </line>
             <line number="126" hits="3" branch="False" />
-            <line number="127" hits="3" branch="True" condition-coverage="100% (2/2)">
+            <line number="127" hits="3" branch="True" condition-coverage="50% (1/2)">
               <conditions>
-                <condition number="183" type="jump" coverage="100%" />
+                <condition number="171" type="jump" coverage="50%" />
               </conditions>
             </line>
-            <line number="128" hits="3" branch="False" />
             <line number="130" hits="3" branch="False" />
-            <line number="131" hits="3" branch="False" />
+            <line number="131" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="232" type="jump" coverage="100%" />
+              </conditions>
+            </line>
             <line number="132" hits="3" branch="False" />
-            <line number="133" hits="3" branch="False" />
             <line number="134" hits="3" branch="False" />
             <line number="135" hits="3" branch="False" />
-            <line number="136" hits="0" branch="False" />
-            <line number="137" hits="0" branch="False" />
-            <line number="138" hits="0" branch="False" />
-            <line number="139" hits="0" branch="False" />
-            <line number="140" hits="3" branch="False" />
+            <line number="136" hits="3" branch="False" />
+            <line number="137" hits="3" branch="False" />
+            <line number="138" hits="3" branch="False" />
+            <line number="139" hits="3" branch="False" />
+            <line number="140" hits="0" branch="False" />
+            <line number="141" hits="0" branch="False" />
+            <line number="142" hits="0" branch="False" />
+            <line number="143" hits="0" branch="False" />
+            <line number="144" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="TalentConsulting.TalentSuite.Projects.API.Queries.GetSows.GetSowByProjectIdAndSowIdCommand" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Queries\GetSows\GetSowByProjectIdAndSowIdCommand.cs" line-rate="0" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ProjectId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="TalentConsulting.TalentSuite.Projects.API.Queries.GetSows.GetSowByProjectIdAndSowIdCommandHandler" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Queries\GetSows\GetSowByProjectIdAndSowIdCommand.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository.ApplicationDbContext,AutoMapper.IMapper)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="TalentConsulting.TalentSuite.Projects.API.Queries.GetSows.GetSowByProjectIdAndSowIdCommandHandler/&lt;Handle&gt;d__3" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Queries\GetSows\GetSowByProjectIdAndSowIdCommand.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="39" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="411" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="39" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="411" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="TalentConsulting.TalentSuite.Projects.API.Queries.GetSows.GetSowByProjectIdAndSowIdCommandValidator" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Queries\GetSows\GetSowByProjectIdAndSowIdCommandValidator.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="False" />
+                <line number="8" hits="0" branch="False" />
+                <line number="9" hits="0" branch="False" />
+                <line number="10" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="0" branch="False" />
+            <line number="8" hits="0" branch="False" />
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
           </lines>
         </class>
         <class name="TalentConsulting.TalentSuite.Projects.API.Queries.GetProjects.GetProjectByIdCommand" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Queries\GetProjects\GetProjectByIdCommand.cs" line-rate="0" branch-rate="1" complexity="2">
@@ -880,6 +1014,108 @@
             <line number="76" hits="3" branch="False" />
             <line number="77" hits="4" branch="False" />
             <line number="80" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="TalentConsulting.TalentSuite.Projects.API.Endpoints.MinimalSowEndPoints" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Endpoints\MinimalSowEndPoints.cs" line-rate="0.36950000000000005" branch-rate="1" complexity="1">
+          <methods>
+            <method name="RegisterSowEndPoints" signature="(Microsoft.AspNetCore.Builder.WebApplication)" line-rate="0.36950000000000005" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="3" branch="False" />
+                <line number="16" hits="3" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="3" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="3" branch="False" />
+                <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="3" branch="False" />
+                <line number="29" hits="3" branch="False" />
+                <line number="31" hits="3" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="3" branch="False" />
+                <line number="34" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="3" branch="False" />
+                <line number="39" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+                <line number="44" hits="3" branch="False" />
+                <line number="45" hits="3" branch="False" />
+                <line number="47" hits="3" branch="False" />
+                <line number="48" hits="0" branch="False" />
+                <line number="49" hits="3" branch="False" />
+                <line number="50" hits="0" branch="False" />
+                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="3" branch="False" />
+                <line number="55" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+                <line number="57" hits="0" branch="False" />
+                <line number="58" hits="0" branch="False" />
+                <line number="59" hits="0" branch="False" />
+                <line number="60" hits="3" branch="False" />
+                <line number="61" hits="3" branch="False" />
+                <line number="62" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="3" branch="False" />
+            <line number="16" hits="3" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="3" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="3" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="3" branch="False" />
+            <line number="29" hits="3" branch="False" />
+            <line number="31" hits="3" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="3" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="3" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+            <line number="44" hits="3" branch="False" />
+            <line number="45" hits="3" branch="False" />
+            <line number="47" hits="3" branch="False" />
+            <line number="48" hits="0" branch="False" />
+            <line number="49" hits="3" branch="False" />
+            <line number="50" hits="0" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="3" branch="False" />
+            <line number="55" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+            <line number="57" hits="0" branch="False" />
+            <line number="58" hits="0" branch="False" />
+            <line number="59" hits="0" branch="False" />
+            <line number="60" hits="3" branch="False" />
+            <line number="61" hits="3" branch="False" />
+            <line number="62" hits="3" branch="False" />
           </lines>
         </class>
         <class name="TalentConsulting.TalentSuite.Projects.API.Commands.UpdateProject.UpdateProjectCommand" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Commands\UpdateProject\UpdateProjectCommand.cs" line-rate="1" branch-rate="1" complexity="3">
@@ -1468,6 +1704,268 @@
             <line number="37" hits="0" branch="False" />
           </lines>
         </class>
+        <class name="TalentConsulting.TalentSuite.Projects.API.Commands.UpdateSow.DeleteSowCommandValidator" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Commands\DeleteSow\DeleteSowCommandValidator.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="False" />
+                <line number="8" hits="0" branch="False" />
+                <line number="10" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="0" branch="False" />
+            <line number="8" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="TalentConsulting.TalentSuite.Projects.API.Commands.UpdateSow.UpdateSowCommand" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Commands\UpdateSow\UpdateSowCommand.cs" line-rate="0" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_SowDto" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,TalentConsulting.TalentSuite.Projects.Common.Entities.SowDto)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="TalentConsulting.TalentSuite.Projects.API.Commands.UpdateSow.UpdateSowCommandHandler" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Commands\UpdateSow\UpdateSowCommand.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository.ApplicationDbContext,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger`1&lt;TalentConsulting.TalentSuite.Projects.API.Commands.UpdateSow.UpdateSowCommandHandler&gt;)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="TalentConsulting.TalentSuite.Projects.API.Commands.UpdateSow.UpdateSowCommandHandler/&lt;Handle&gt;d__4" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Commands\UpdateSow\UpdateSowCommand.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="39" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="218" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
+                <line number="50" hits="0" branch="False" />
+                <line number="57" hits="0" branch="False" />
+                <line number="58" hits="0" branch="False" />
+                <line number="59" hits="0" branch="False" />
+                <line number="60" hits="0" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="62" hits="0" branch="False" />
+                <line number="65" hits="0" branch="False" />
+                <line number="66" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="39" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="218" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+            <line number="50" hits="0" branch="False" />
+            <line number="57" hits="0" branch="False" />
+            <line number="58" hits="0" branch="False" />
+            <line number="59" hits="0" branch="False" />
+            <line number="60" hits="0" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="62" hits="0" branch="False" />
+            <line number="65" hits="0" branch="False" />
+            <line number="66" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="TalentConsulting.TalentSuite.Projects.API.Commands.UpdateSow.UpdateSowCommandValidator" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Commands\UpdateSow\UpdateSowCommandValidator.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="False" />
+                <line number="8" hits="0" branch="False" />
+                <line number="10" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="0" branch="False" />
+            <line number="8" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="TalentConsulting.TalentSuite.Projects.API.Commands.DeleteSow.DeleteSowCommand" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Commands\DeleteSow\DeleteSowCommand.cs" line-rate="0" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ProjectId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="TalentConsulting.TalentSuite.Projects.API.Commands.DeleteSow.DeleteSowCommandHandler" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Commands\DeleteSow\DeleteSowCommand.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository.ApplicationDbContext,Microsoft.Extensions.Logging.ILogger`1&lt;TalentConsulting.TalentSuite.Projects.API.Commands.DeleteSow.DeleteSowCommandHandler&gt;)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="TalentConsulting.TalentSuite.Projects.API.Commands.DeleteSow.DeleteSowCommandHandler/&lt;Handle&gt;d__3" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Commands\DeleteSow\DeleteSowCommand.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="33" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="39" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="432" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
+                <line number="49" hits="0" branch="False" />
+                <line number="50" hits="0" branch="False" />
+                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="33" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="39" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="432" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+            <line number="49" hits="0" branch="False" />
+            <line number="50" hits="0" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+          </lines>
+        </class>
         <class name="TalentConsulting.TalentSuite.Projects.API.Commands.CreateProject.CreateProjectCommand" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.API\Commands\CreateProject\CreateProjectCommand.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="get_ProjectDto" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -1932,7 +2430,7 @@
         </class>
       </classes>
     </package>
-    <package name="TalentConsulting.TalentSuite.Projects.Common" line-rate="0.2402" branch-rate="0" complexity="215">
+    <package name="TalentConsulting.TalentSuite.Projects.Common" line-rate="0.21050000000000002" branch-rate="0" complexity="215">
       <classes>
         <class name="TalentConsulting.TalentSuite.Projects.Common.DateTimeOffsetRange" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\DateTimeOffsetRange.cs" line-rate="0" branch-rate="0" complexity="12">
           <methods>
@@ -2300,12 +2798,12 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="161" branch="False" />
+                <line number="10" hits="75" branch="False" />
               </lines>
             </method>
             <method name="get_Created" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="143" branch="False" />
+                <line number="12" hits="69" branch="False" />
               </lines>
             </method>
             <method name="get_DomainEvents" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -2325,17 +2823,17 @@
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="80" branch="False" />
+                <line number="14" hits="37" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="10" hits="161" branch="False" />
-            <line number="12" hits="143" branch="False" />
+            <line number="10" hits="75" branch="False" />
+            <line number="12" hits="69" branch="False" />
             <line number="17" hits="0" branch="False" />
             <line number="19" hits="2" branch="False" />
             <line number="21" hits="0" branch="False" />
-            <line number="14" hits="80" branch="False" />
+            <line number="14" hits="37" branch="False" />
           </lines>
         </class>
         <class name="TalentConsulting.TalentSuite.Projects.Common.PaginatedList`1" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\PaginatedList.cs" line-rate="1" branch-rate="1" complexity="8">
@@ -2506,107 +3004,107 @@
             </method>
             <method name="GetHashCode" signature="()" line-rate="0" branch-rate="0" complexity="4">
               <lines>
-                <line number="25" hits="0" branch="False" />
-                <line number="26" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
                     <condition number="17" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="27" hits="0" branch="False" />
                 <line number="28" hits="0" branch="False" />
                 <line number="29" hits="0" branch="False" />
                 <line number="30" hits="0" branch="False" />
                 <line number="31" hits="0" branch="False" />
                 <line number="32" hits="0" branch="False" />
-                <line number="33" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
                     <condition number="7" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="34" hits="0" branch="False" />
                 <line number="35" hits="0" branch="False" />
                 <line number="36" hits="0" branch="False" />
-                <line number="38" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
                 <line number="39" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
               </lines>
             </method>
             <method name="CompareTo" signature="(TalentConsulting.TalentSuite.Projects.Common.ValueObject)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="42" hits="0" branch="False" />
-                <line number="43" hits="0" branch="False" />
-                <line number="44" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
               </lines>
             </method>
             <method name="op_Equality" signature="(TalentConsulting.TalentSuite.Projects.Common.ValueObject,TalentConsulting.TalentSuite.Projects.Common.ValueObject)" line-rate="0" branch-rate="0" complexity="8">
               <lines>
-                <line number="47" hits="0" branch="False" />
-                <line number="48" hits="0" branch="True" condition-coverage="0% (0/4)">
+                <line number="50" hits="0" branch="False" />
+                <line number="51" hits="0" branch="True" condition-coverage="0% (0/4)">
                   <conditions>
                     <condition number="2" type="jump" coverage="0%" />
                     <condition number="13" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="49" hits="0" branch="False" />
-                <line number="51" hits="0" branch="True" condition-coverage="0% (0/4)">
+                <line number="52" hits="0" branch="False" />
+                <line number="54" hits="0" branch="True" condition-coverage="0% (0/4)">
                   <conditions>
                     <condition number="20" type="jump" coverage="0%" />
                     <condition number="31" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="52" hits="0" branch="False" />
-                <line number="54" hits="0" branch="False" />
                 <line number="55" hits="0" branch="False" />
+                <line number="57" hits="0" branch="False" />
+                <line number="58" hits="0" branch="False" />
               </lines>
             </method>
             <method name="op_Inequality" signature="(TalentConsulting.TalentSuite.Projects.Common.ValueObject,TalentConsulting.TalentSuite.Projects.Common.ValueObject)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="58" hits="0" branch="False" />
-                <line number="59" hits="0" branch="False" />
-                <line number="60" hits="0" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="62" hits="0" branch="False" />
+                <line number="63" hits="0" branch="False" />
               </lines>
             </method>
             <method name="op_LessThan" signature="(TalentConsulting.TalentSuite.Projects.Common.ValueObject,TalentConsulting.TalentSuite.Projects.Common.ValueObject)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="63" hits="0" branch="False" />
-                <line number="64" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="66" hits="0" branch="False" />
+                <line number="67" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
                     <condition number="2" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="65" hits="0" branch="False" />
+                <line number="68" hits="0" branch="False" />
               </lines>
             </method>
             <method name="op_LessThanOrEqual" signature="(TalentConsulting.TalentSuite.Projects.Common.ValueObject,TalentConsulting.TalentSuite.Projects.Common.ValueObject)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="68" hits="0" branch="False" />
-                <line number="69" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="71" hits="0" branch="False" />
+                <line number="72" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
                     <condition number="2" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="70" hits="0" branch="False" />
+                <line number="73" hits="0" branch="False" />
               </lines>
             </method>
             <method name="op_GreaterThan" signature="(TalentConsulting.TalentSuite.Projects.Common.ValueObject,TalentConsulting.TalentSuite.Projects.Common.ValueObject)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="73" hits="0" branch="False" />
-                <line number="74" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="76" hits="0" branch="False" />
+                <line number="77" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
                     <condition number="2" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="75" hits="0" branch="False" />
+                <line number="78" hits="0" branch="False" />
               </lines>
             </method>
             <method name="op_GreaterThanOrEqual" signature="(TalentConsulting.TalentSuite.Projects.Common.ValueObject,TalentConsulting.TalentSuite.Projects.Common.ValueObject)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="78" hits="0" branch="False" />
-                <line number="79" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="81" hits="0" branch="False" />
+                <line number="82" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
                     <condition number="2" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="80" hits="0" branch="False" />
+                <line number="83" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
@@ -2627,79 +3125,79 @@
             <line number="19" hits="0" branch="False" />
             <line number="21" hits="0" branch="False" />
             <line number="22" hits="0" branch="False" />
-            <line number="25" hits="0" branch="False" />
-            <line number="26" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
                 <condition number="17" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="27" hits="0" branch="False" />
             <line number="28" hits="0" branch="False" />
             <line number="29" hits="0" branch="False" />
             <line number="30" hits="0" branch="False" />
             <line number="31" hits="0" branch="False" />
             <line number="32" hits="0" branch="False" />
-            <line number="33" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
                 <condition number="7" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="34" hits="0" branch="False" />
             <line number="35" hits="0" branch="False" />
             <line number="36" hits="0" branch="False" />
-            <line number="38" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
             <line number="39" hits="0" branch="False" />
-            <line number="42" hits="0" branch="False" />
-            <line number="43" hits="0" branch="False" />
-            <line number="44" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
             <line number="47" hits="0" branch="False" />
-            <line number="48" hits="0" branch="True" condition-coverage="0% (0/4)">
+            <line number="50" hits="0" branch="False" />
+            <line number="51" hits="0" branch="True" condition-coverage="0% (0/4)">
               <conditions>
                 <condition number="2" type="jump" coverage="0%" />
                 <condition number="13" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="49" hits="0" branch="False" />
-            <line number="51" hits="0" branch="True" condition-coverage="0% (0/4)">
+            <line number="52" hits="0" branch="False" />
+            <line number="54" hits="0" branch="True" condition-coverage="0% (0/4)">
               <conditions>
                 <condition number="20" type="jump" coverage="0%" />
                 <condition number="31" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="52" hits="0" branch="False" />
-            <line number="54" hits="0" branch="False" />
             <line number="55" hits="0" branch="False" />
+            <line number="57" hits="0" branch="False" />
             <line number="58" hits="0" branch="False" />
-            <line number="59" hits="0" branch="False" />
-            <line number="60" hits="0" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="62" hits="0" branch="False" />
             <line number="63" hits="0" branch="False" />
-            <line number="64" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="66" hits="0" branch="False" />
+            <line number="67" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
                 <condition number="2" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="65" hits="0" branch="False" />
             <line number="68" hits="0" branch="False" />
-            <line number="69" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="71" hits="0" branch="False" />
+            <line number="72" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
                 <condition number="2" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="70" hits="0" branch="False" />
             <line number="73" hits="0" branch="False" />
-            <line number="74" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="76" hits="0" branch="False" />
+            <line number="77" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
                 <condition number="2" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="75" hits="0" branch="False" />
             <line number="78" hits="0" branch="False" />
-            <line number="79" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="81" hits="0" branch="False" />
+            <line number="82" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
                 <condition number="2" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="80" hits="0" branch="False" />
+            <line number="83" hits="0" branch="False" />
           </lines>
         </class>
         <class name="TalentConsulting.TalentSuite.Projects.Common.ValueObjectBase" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\ValueObjectBase.cs" line-rate="0" branch-rate="0" complexity="26">
@@ -3456,47 +3954,47 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="8" branch="False" />
+                <line number="20" hits="2" branch="False" />
               </lines>
             </method>
             <method name="get_Created" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="8" branch="False" />
+                <line number="21" hits="2" branch="False" />
               </lines>
             </method>
             <method name="get_PlannedTasks" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="22" hits="8" branch="False" />
+                <line number="22" hits="2" branch="False" />
               </lines>
             </method>
             <method name="get_CompletedTasks" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="23" hits="8" branch="False" />
+                <line number="23" hits="2" branch="False" />
               </lines>
             </method>
             <method name="get_Weeknumber" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="24" hits="8" branch="False" />
+                <line number="24" hits="2" branch="False" />
               </lines>
             </method>
             <method name="get_SubmissionDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="25" hits="8" branch="False" />
+                <line number="25" hits="2" branch="False" />
               </lines>
             </method>
             <method name="get_ProjectId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="26" hits="8" branch="False" />
+                <line number="26" hits="2" branch="False" />
               </lines>
             </method>
             <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="27" hits="8" branch="False" />
+                <line number="27" hits="2" branch="False" />
               </lines>
             </method>
             <method name="get_Risks" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="28" hits="8" branch="False" />
+                <line number="28" hits="2" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -3506,71 +4004,71 @@
             </method>
             <method name=".ctor" signature="(System.String,System.DateTime,System.String,System.String,System.Int32,System.DateTime,System.String,System.String,System.Collections.Generic.ICollection`1&lt;TalentConsulting.TalentSuite.Projects.Common.Entities.RiskDto&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="3" branch="False" />
-                <line number="8" hits="3" branch="False" />
-                <line number="9" hits="3" branch="False" />
-                <line number="10" hits="3" branch="False" />
-                <line number="11" hits="3" branch="False" />
-                <line number="12" hits="3" branch="False" />
-                <line number="13" hits="3" branch="False" />
-                <line number="14" hits="3" branch="False" />
-                <line number="15" hits="3" branch="False" />
-                <line number="16" hits="3" branch="False" />
-                <line number="17" hits="3" branch="False" />
-                <line number="18" hits="3" branch="False" />
+                <line number="7" hits="1" branch="False" />
+                <line number="8" hits="1" branch="False" />
+                <line number="9" hits="1" branch="False" />
+                <line number="10" hits="1" branch="False" />
+                <line number="11" hits="1" branch="False" />
+                <line number="12" hits="1" branch="False" />
+                <line number="13" hits="1" branch="False" />
+                <line number="14" hits="1" branch="False" />
+                <line number="15" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
+                <line number="17" hits="1" branch="False" />
+                <line number="18" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="20" hits="8" branch="False" />
-            <line number="21" hits="8" branch="False" />
-            <line number="22" hits="8" branch="False" />
-            <line number="23" hits="8" branch="False" />
-            <line number="24" hits="8" branch="False" />
-            <line number="25" hits="8" branch="False" />
-            <line number="26" hits="8" branch="False" />
-            <line number="27" hits="8" branch="False" />
-            <line number="28" hits="8" branch="False" />
+            <line number="20" hits="2" branch="False" />
+            <line number="21" hits="2" branch="False" />
+            <line number="22" hits="2" branch="False" />
+            <line number="23" hits="2" branch="False" />
+            <line number="24" hits="2" branch="False" />
+            <line number="25" hits="2" branch="False" />
+            <line number="26" hits="2" branch="False" />
+            <line number="27" hits="2" branch="False" />
+            <line number="28" hits="2" branch="False" />
             <line number="5" hits="0" branch="False" />
-            <line number="7" hits="3" branch="False" />
-            <line number="8" hits="3" branch="False" />
-            <line number="9" hits="3" branch="False" />
-            <line number="10" hits="3" branch="False" />
-            <line number="11" hits="3" branch="False" />
-            <line number="12" hits="3" branch="False" />
-            <line number="13" hits="3" branch="False" />
-            <line number="14" hits="3" branch="False" />
-            <line number="15" hits="3" branch="False" />
-            <line number="16" hits="3" branch="False" />
-            <line number="17" hits="3" branch="False" />
-            <line number="18" hits="3" branch="False" />
+            <line number="7" hits="1" branch="False" />
+            <line number="8" hits="1" branch="False" />
+            <line number="9" hits="1" branch="False" />
+            <line number="10" hits="1" branch="False" />
+            <line number="11" hits="1" branch="False" />
+            <line number="12" hits="1" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="14" hits="1" branch="False" />
+            <line number="15" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="17" hits="1" branch="False" />
+            <line number="18" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Common.Entities.RiskDto" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\Entities\RiskDto.cs" line-rate="0.9285" branch-rate="1" complexity="7">
+        <class name="TalentConsulting.TalentSuite.Projects.Common.Entities.RiskDto" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\Entities\RiskDto.cs" line-rate="0" branch-rate="1" complexity="7">
           <methods>
-            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="6" branch="False" />
+                <line number="16" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_ReportId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="get_ReportId" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="6" branch="False" />
+                <line number="17" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_RiskDetails" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="get_RiskDetails" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="6" branch="False" />
+                <line number="18" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_RiskMitigation" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="get_RiskMitigation" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="6" branch="False" />
+                <line number="19" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_RagStatus" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="get_RagStatus" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="6" branch="False" />
+                <line number="20" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -3578,34 +4076,34 @@
                 <line number="5" hits="0" branch="False" />
               </lines>
             </method>
-            <method name=".ctor" signature="(System.String,System.String,System.String,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(System.String,System.String,System.String,System.String,System.String)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="2" branch="False" />
-                <line number="8" hits="2" branch="False" />
-                <line number="9" hits="2" branch="False" />
-                <line number="10" hits="2" branch="False" />
-                <line number="11" hits="2" branch="False" />
-                <line number="12" hits="2" branch="False" />
-                <line number="13" hits="2" branch="False" />
-                <line number="14" hits="2" branch="False" />
+                <line number="7" hits="0" branch="False" />
+                <line number="8" hits="0" branch="False" />
+                <line number="9" hits="0" branch="False" />
+                <line number="10" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="16" hits="6" branch="False" />
-            <line number="17" hits="6" branch="False" />
-            <line number="18" hits="6" branch="False" />
-            <line number="19" hits="6" branch="False" />
-            <line number="20" hits="6" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
             <line number="5" hits="0" branch="False" />
-            <line number="7" hits="2" branch="False" />
-            <line number="8" hits="2" branch="False" />
-            <line number="9" hits="2" branch="False" />
-            <line number="10" hits="2" branch="False" />
-            <line number="11" hits="2" branch="False" />
-            <line number="12" hits="2" branch="False" />
-            <line number="13" hits="2" branch="False" />
-            <line number="14" hits="2" branch="False" />
+            <line number="7" hits="0" branch="False" />
+            <line number="8" hits="0" branch="False" />
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
           </lines>
         </class>
         <class name="TalentConsulting.TalentSuite.Projects.Common.Entities.SowDto" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Common\Entities\SowDto.cs" line-rate="0" branch-rate="1" complexity="9">
@@ -3858,7 +4356,7 @@
         </class>
       </classes>
     </package>
-    <package name="TalentConsulting.TalentSuite.Projects.Core" line-rate="0.6893" branch-rate="0.1666" complexity="98">
+    <package name="TalentConsulting.TalentSuite.Projects.Core" line-rate="0.6125" branch-rate="0" complexity="65">
       <classes>
         <class name="TalentConsulting.TalentSuite.Projects.Core.AutoMappingProfiles" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\AutoMappingProfiles.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
@@ -3875,11 +4373,6 @@
                 <line number="17" hits="3" branch="False" />
                 <line number="18" hits="3" branch="False" />
                 <line number="19" hits="3" branch="False" />
-                <line number="20" hits="3" branch="False" />
-                <line number="21" hits="3" branch="False" />
-                <line number="22" hits="3" branch="False" />
-                <line number="23" hits="3" branch="False" />
-                <line number="24" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
@@ -3895,16 +4388,11 @@
             <line number="17" hits="3" branch="False" />
             <line number="18" hits="3" branch="False" />
             <line number="19" hits="3" branch="False" />
-            <line number="20" hits="3" branch="False" />
-            <line number="21" hits="3" branch="False" />
-            <line number="22" hits="3" branch="False" />
-            <line number="23" hits="3" branch="False" />
-            <line number="24" hits="3" branch="False" />
           </lines>
         </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Core.Helpers.EntityToDtoHelper" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\Helpers\EntityToDtoHelper.cs" line-rate="0.6956" branch-rate="0.1666" complexity="8">
+        <class name="TalentConsulting.TalentSuite.Projects.Core.Helpers.EntityToDtoHelper" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\Helpers\EntityToDtoHelper.cs" line-rate="0.5217" branch-rate="0" complexity="8">
           <methods>
-            <method name="ProjectDtoToProjectDto" signature="(TalentConsulting.TalentSuite.Projects.Core.Entities.Project)" line-rate="0.9285" branch-rate="0.25" complexity="4">
+            <method name="ProjectDtoToProjectDto" signature="(TalentConsulting.TalentSuite.Projects.Core.Entities.Project)" line-rate="0.8571" branch-rate="0" complexity="4">
               <lines>
                 <line number="10" hits="1" branch="False" />
                 <line number="11" hits="1" branch="False" />
@@ -3916,9 +4404,9 @@
                 <line number="17" hits="1" branch="False" />
                 <line number="18" hits="2" branch="False" />
                 <line number="19" hits="1" branch="False" />
-                <line number="20" hits="2" branch="True" condition-coverage="50% (1/2)">
+                <line number="20" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="20" type="jump" coverage="50%" />
+                    <condition number="20" type="jump" coverage="0%" />
                   </conditions>
                 </line>
                 <line number="21" hits="0" branch="True" condition-coverage="0% (0/2)">
@@ -3941,11 +4429,11 @@
                 <line number="28" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="GetRisks" signature="(System.Collections.Generic.ICollection`1&lt;TalentConsulting.TalentSuite.Projects.Core.Entities.Risk&gt;)" line-rate="1" branch-rate="1" complexity="1">
+            <method name="GetRisks" signature="(System.Collections.Generic.ICollection`1&lt;TalentConsulting.TalentSuite.Projects.Core.Entities.Risk&gt;)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="31" hits="2" branch="False" />
-                <line number="32" hits="4" branch="False" />
-                <line number="33" hits="2" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
               </lines>
             </method>
             <method name="GetClientProjects" signature="(System.Collections.Generic.ICollection`1&lt;TalentConsulting.TalentSuite.Projects.Core.Entities.ClientProject&gt;)" line-rate="0" branch-rate="1" complexity="1">
@@ -3967,9 +4455,9 @@
             <line number="17" hits="1" branch="False" />
             <line number="18" hits="2" branch="False" />
             <line number="19" hits="1" branch="False" />
-            <line number="20" hits="2" branch="True" condition-coverage="50% (1/2)">
+            <line number="20" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="20" type="jump" coverage="50%" />
+                <condition number="20" type="jump" coverage="0%" />
               </conditions>
             </line>
             <line number="21" hits="0" branch="True" condition-coverage="0% (0/2)">
@@ -3986,9 +4474,9 @@
               </conditions>
             </line>
             <line number="28" hits="0" branch="False" />
-            <line number="31" hits="2" branch="False" />
-            <line number="32" hits="4" branch="False" />
-            <line number="33" hits="2" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
             <line number="36" hits="0" branch="False" />
             <line number="37" hits="0" branch="False" />
             <line number="38" hits="0" branch="False" />
@@ -4016,46 +4504,6 @@
             <line number="16" hits="2" branch="False" />
             <line number="17" hits="2" branch="False" />
             <line number="18" hits="2" branch="False" />
-          </lines>
-        </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Core.Entities.Audit" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\Entities\Audit.cs" line-rate="0" branch-rate="1" complexity="4">
-          <methods>
-            <method name="get_Detail" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="17" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_UserId" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="18" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="8" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="(System.String,System.String,System.String)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="10" hits="0" branch="False" />
-                <line number="11" hits="0" branch="False" />
-                <line number="12" hits="0" branch="False" />
-                <line number="13" hits="0" branch="False" />
-                <line number="14" hits="0" branch="False" />
-                <line number="15" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="17" hits="0" branch="False" />
-            <line number="18" hits="0" branch="False" />
-            <line number="8" hits="0" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
           </lines>
         </class>
         <class name="TalentConsulting.TalentSuite.Projects.Core.Entities.Client" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\Entities\Client.cs" line-rate="0.9229999999999999" branch-rate="1" complexity="6">
@@ -4210,68 +4658,6 @@
             <line number="19" hits="3" branch="False" />
           </lines>
         </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Core.Entities.Notification" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\Entities\Notification.cs" line-rate="0" branch-rate="1" complexity="7">
-          <methods>
-            <method name="get_NextRetryDate" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="21" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Content" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="22" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Title" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="23" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Status" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="24" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Recipients" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="25" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="10" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="(System.String,System.String,System.DateTime,System.String,System.String)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="12" hits="0" branch="False" />
-                <line number="13" hits="0" branch="False" />
-                <line number="14" hits="0" branch="False" />
-                <line number="15" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
-                <line number="18" hits="0" branch="False" />
-                <line number="19" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="21" hits="0" branch="False" />
-            <line number="22" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
-            <line number="24" hits="0" branch="False" />
-            <line number="25" hits="0" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
-            <line number="18" hits="0" branch="False" />
-            <line number="19" hits="0" branch="False" />
-          </lines>
-        </class>
         <class name="TalentConsulting.TalentSuite.Projects.Core.Entities.Project" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\Entities\Project.cs" line-rate="1" branch-rate="1" complexity="11">
           <methods>
             <method name="get_ContactNumber" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -4424,21 +4810,106 @@
             <line number="18" hits="12" branch="False" />
           </lines>
         </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Core.Entities.Recipient" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\Entities\Recipient.cs" line-rate="0" branch-rate="1" complexity="5">
+        <class name="TalentConsulting.TalentSuite.Projects.Core.Entities.Report" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\Entities\Report.cs" line-rate="0" branch-rate="1" complexity="9">
           <methods>
-            <method name="get_Name" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_PlannedTasks" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_Email" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_CompletedTasks" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Weeknumber" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_SubmissionDate" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="29" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ProjectId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_UserId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="31" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Risks" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="32" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String,System.String,System.Int32,System.DateTime,System.String,System.String,System.Collections.Generic.ICollection`1&lt;TalentConsulting.TalentSuite.Projects.Core.Entities.Risk&gt;)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="TalentConsulting.TalentSuite.Projects.Core.Entities.Risk" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\Entities\Risk.cs" line-rate="0" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_ReportId" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
                 <line number="21" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_Notificationid" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_RiskDetails" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
                 <line number="22" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_RiskMitigation" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_RagStatus" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -4446,7 +4917,7 @@
                 <line number="10" hits="0" branch="False" />
               </lines>
             </method>
-            <method name=".ctor" signature="(System.String,System.String,System.String,System.String)" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(System.String,System.String,System.String,System.String,System.String)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
                 <line number="12" hits="0" branch="False" />
                 <line number="13" hits="0" branch="False" />
@@ -4455,13 +4926,15 @@
                 <line number="16" hits="0" branch="False" />
                 <line number="17" hits="0" branch="False" />
                 <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="20" hits="0" branch="False" />
             <line number="21" hits="0" branch="False" />
             <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
             <line number="10" hits="0" branch="False" />
             <line number="12" hits="0" branch="False" />
             <line number="13" hits="0" branch="False" />
@@ -4470,142 +4943,7 @@
             <line number="16" hits="0" branch="False" />
             <line number="17" hits="0" branch="False" />
             <line number="18" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Core.Entities.Report" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\Entities\Report.cs" line-rate="1" branch-rate="1" complexity="9">
-          <methods>
-            <method name="get_PlannedTasks" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="26" hits="28" branch="False" />
-              </lines>
-            </method>
-            <method name="get_CompletedTasks" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="27" hits="28" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Weeknumber" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="28" hits="28" branch="False" />
-              </lines>
-            </method>
-            <method name="get_SubmissionDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="29" hits="28" branch="False" />
-              </lines>
-            </method>
-            <method name="get_ProjectId" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="30" hits="28" branch="False" />
-              </lines>
-            </method>
-            <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="31" hits="40" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Risks" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="32" hits="28" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="12" hits="6" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="(System.String,System.String,System.String,System.Int32,System.DateTime,System.String,System.String,System.Collections.Generic.ICollection`1&lt;TalentConsulting.TalentSuite.Projects.Core.Entities.Risk&gt;)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="14" hits="12" branch="False" />
-                <line number="15" hits="12" branch="False" />
-                <line number="16" hits="12" branch="False" />
-                <line number="17" hits="12" branch="False" />
-                <line number="18" hits="12" branch="False" />
-                <line number="19" hits="12" branch="False" />
-                <line number="20" hits="12" branch="False" />
-                <line number="21" hits="12" branch="False" />
-                <line number="22" hits="12" branch="False" />
-                <line number="23" hits="12" branch="False" />
-                <line number="24" hits="12" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="26" hits="28" branch="False" />
-            <line number="27" hits="28" branch="False" />
-            <line number="28" hits="28" branch="False" />
-            <line number="29" hits="28" branch="False" />
-            <line number="30" hits="28" branch="False" />
-            <line number="31" hits="40" branch="False" />
-            <line number="32" hits="28" branch="False" />
-            <line number="12" hits="6" branch="False" />
-            <line number="14" hits="12" branch="False" />
-            <line number="15" hits="12" branch="False" />
-            <line number="16" hits="12" branch="False" />
-            <line number="17" hits="12" branch="False" />
-            <line number="18" hits="12" branch="False" />
-            <line number="19" hits="12" branch="False" />
-            <line number="20" hits="12" branch="False" />
-            <line number="21" hits="12" branch="False" />
-            <line number="22" hits="12" branch="False" />
-            <line number="23" hits="12" branch="False" />
-            <line number="24" hits="12" branch="False" />
-          </lines>
-        </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Core.Entities.Risk" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\Entities\Risk.cs" line-rate="1" branch-rate="1" complexity="6">
-          <methods>
-            <method name="get_ReportId" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="21" hits="28" branch="False" />
-              </lines>
-            </method>
-            <method name="get_RiskDetails" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="22" hits="28" branch="False" />
-              </lines>
-            </method>
-            <method name="get_RiskMitigation" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="23" hits="28" branch="False" />
-              </lines>
-            </method>
-            <method name="get_RagStatus" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="24" hits="28" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="10" hits="6" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="(System.String,System.String,System.String,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="12" hits="12" branch="False" />
-                <line number="13" hits="12" branch="False" />
-                <line number="14" hits="12" branch="False" />
-                <line number="15" hits="12" branch="False" />
-                <line number="16" hits="12" branch="False" />
-                <line number="17" hits="12" branch="False" />
-                <line number="18" hits="12" branch="False" />
-                <line number="19" hits="12" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="21" hits="28" branch="False" />
-            <line number="22" hits="28" branch="False" />
-            <line number="23" hits="28" branch="False" />
-            <line number="24" hits="28" branch="False" />
-            <line number="10" hits="6" branch="False" />
-            <line number="12" hits="12" branch="False" />
-            <line number="13" hits="12" branch="False" />
-            <line number="14" hits="12" branch="False" />
-            <line number="15" hits="12" branch="False" />
-            <line number="16" hits="12" branch="False" />
-            <line number="17" hits="12" branch="False" />
-            <line number="18" hits="12" branch="False" />
-            <line number="19" hits="12" branch="False" />
+            <line number="19" hits="0" branch="False" />
           </lines>
         </class>
         <class name="TalentConsulting.TalentSuite.Projects.Core.Entities.Sow" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\Entities\Sow.cs" line-rate="0" branch-rate="1" complexity="7">
@@ -4674,164 +5012,6 @@
             <line number="21" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Core.Entities.User" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\Entities\User.cs" line-rate="0.9333" branch-rate="1" complexity="7">
-          <methods>
-            <method name="get_Firstname" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="22" hits="12" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Lastname" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="23" hits="12" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Email" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="24" hits="12" branch="False" />
-              </lines>
-            </method>
-            <method name="get_UserGroupId" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="25" hits="12" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Reports" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="26" hits="12" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="10" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.ICollection`1&lt;TalentConsulting.TalentSuite.Projects.Core.Entities.Report&gt;)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="12" hits="6" branch="False" />
-                <line number="13" hits="6" branch="False" />
-                <line number="14" hits="6" branch="False" />
-                <line number="15" hits="6" branch="False" />
-                <line number="16" hits="6" branch="False" />
-                <line number="17" hits="6" branch="False" />
-                <line number="18" hits="6" branch="False" />
-                <line number="19" hits="6" branch="False" />
-                <line number="20" hits="6" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="22" hits="12" branch="False" />
-            <line number="23" hits="12" branch="False" />
-            <line number="24" hits="12" branch="False" />
-            <line number="25" hits="12" branch="False" />
-            <line number="26" hits="12" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="12" hits="6" branch="False" />
-            <line number="13" hits="6" branch="False" />
-            <line number="14" hits="6" branch="False" />
-            <line number="15" hits="6" branch="False" />
-            <line number="16" hits="6" branch="False" />
-            <line number="17" hits="6" branch="False" />
-            <line number="18" hits="6" branch="False" />
-            <line number="19" hits="6" branch="False" />
-            <line number="20" hits="6" branch="False" />
-          </lines>
-        </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Core.Entities.UserGroup" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\Entities\UserGroup.cs" line-rate="0.9" branch-rate="1" complexity="5">
-          <methods>
-            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="18" hits="18" branch="False" />
-              </lines>
-            </method>
-            <method name="get_ReceivesReports" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="19" hits="18" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Users" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="20" hits="9" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="10" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="(System.String,System.String,System.Boolean)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="12" hits="9" branch="False" />
-                <line number="13" hits="9" branch="False" />
-                <line number="14" hits="9" branch="False" />
-                <line number="15" hits="9" branch="False" />
-                <line number="16" hits="9" branch="False" />
-                <line number="17" hits="9" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="18" hits="18" branch="False" />
-            <line number="19" hits="18" branch="False" />
-            <line number="20" hits="9" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="12" hits="9" branch="False" />
-            <line number="13" hits="9" branch="False" />
-            <line number="14" hits="9" branch="False" />
-            <line number="15" hits="9" branch="False" />
-            <line number="16" hits="9" branch="False" />
-            <line number="17" hits="9" branch="False" />
-          </lines>
-        </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Core.Entities.UserProjectRole" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Core\Entities\UserProjectRole.cs" line-rate="0" branch-rate="1" complexity="5">
-          <methods>
-            <method name="get_UserId" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="21" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_ProjectId" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="22" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Recievesreports" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="23" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="11" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="(System.String,System.String,System.String,System.Boolean)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="13" hits="0" branch="False" />
-                <line number="14" hits="0" branch="False" />
-                <line number="15" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
-                <line number="18" hits="0" branch="False" />
-                <line number="19" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="21" hits="0" branch="False" />
-            <line number="22" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
-            <line number="18" hits="0" branch="False" />
-            <line number="19" hits="0" branch="False" />
-          </lines>
-        </class>
       </classes>
     </package>
     <package name="TalentConsulting.TalentSuite.Projects.FunctionalTests" line-rate="0.5714" branch-rate="0.413" complexity="55">
@@ -4852,264 +5032,264 @@
           <methods>
             <method name="CreateToken" signature="(System.Collections.Generic.List`1&lt;System.Security.Claims.Claim&gt;,Microsoft.Extensions.Configuration.IConfiguration)" line-rate="1" branch-rate="1" complexity="4">
               <lines>
-                <line number="67" hits="3" branch="False" />
-                <line number="68" hits="3" branch="True" condition-coverage="100% (2/2)">
+                <line number="60" hits="3" branch="False" />
+                <line number="61" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="13" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="69" hits="3" branch="False" />
-                <line number="70" hits="3" branch="True" condition-coverage="100% (2/2)">
+                <line number="62" hits="3" branch="False" />
+                <line number="63" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="64" type="jump" coverage="100%" />
                   </conditions>
                 </line>
+                <line number="64" hits="3" branch="False" />
+                <line number="65" hits="3" branch="False" />
+                <line number="66" hits="3" branch="False" />
+                <line number="68" hits="3" branch="False" />
+                <line number="69" hits="3" branch="False" />
+                <line number="70" hits="3" branch="False" />
                 <line number="71" hits="3" branch="False" />
                 <line number="72" hits="3" branch="False" />
                 <line number="73" hits="3" branch="False" />
-                <line number="75" hits="3" branch="False" />
+                <line number="74" hits="3" branch="False" />
                 <line number="76" hits="3" branch="False" />
                 <line number="77" hits="3" branch="False" />
-                <line number="78" hits="3" branch="False" />
-                <line number="79" hits="3" branch="False" />
-                <line number="80" hits="3" branch="False" />
-                <line number="81" hits="3" branch="False" />
-                <line number="83" hits="3" branch="False" />
-                <line number="84" hits="3" branch="False" />
               </lines>
             </method>
             <method name="Dispose" signature="(System.Boolean)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="87" hits="0" branch="False" />
-                <line number="89" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="80" hits="0" branch="False" />
+                <line number="82" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
                     <condition number="14" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="90" hits="0" branch="False" />
-                <line number="91" hits="0" branch="False" />
-                <line number="92" hits="0" branch="False" />
-                <line number="93" hits="0" branch="False" />
-                <line number="94" hits="0" branch="False" />
+                <line number="83" hits="0" branch="False" />
+                <line number="84" hits="0" branch="False" />
+                <line number="85" hits="0" branch="False" />
+                <line number="86" hits="0" branch="False" />
+                <line number="87" hits="0" branch="False" />
               </lines>
             </method>
             <method name="Dispose" signature="()" line-rate="0.9" branch-rate="0.875" complexity="8">
               <lines>
-                <line number="97" hits="3" branch="False" />
-                <line number="98" hits="3" branch="True" condition-coverage="50% (1/2)">
+                <line number="90" hits="3" branch="False" />
+                <line number="91" hits="3" branch="True" condition-coverage="50% (1/2)">
                   <conditions>
                     <condition number="12" type="jump" coverage="50%" />
                   </conditions>
                 </line>
-                <line number="99" hits="0" branch="False" />
-                <line number="100" hits="0" branch="False" />
-                <line number="103" hits="3" branch="True" condition-coverage="100% (2/2)">
+                <line number="92" hits="0" branch="False" />
+                <line number="93" hits="0" branch="False" />
+                <line number="96" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="31" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="97" hits="3" branch="False" />
+                <line number="98" hits="3" branch="False" />
+                <line number="99" hits="3" branch="False" />
+                <line number="100" hits="3" branch="False" />
+                <line number="101" hits="3" branch="False" />
+                <line number="103" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="102" type="jump" coverage="100%" />
                   </conditions>
                 </line>
                 <line number="104" hits="3" branch="False" />
                 <line number="105" hits="3" branch="False" />
                 <line number="106" hits="3" branch="False" />
-                <line number="107" hits="3" branch="False" />
-                <line number="108" hits="3" branch="False" />
-                <line number="110" hits="3" branch="True" condition-coverage="100% (2/2)">
-                  <conditions>
-                    <condition number="102" type="jump" coverage="100%" />
-                  </conditions>
-                </line>
-                <line number="111" hits="3" branch="False" />
-                <line number="112" hits="3" branch="False" />
-                <line number="113" hits="3" branch="False" />
-                <line number="115" hits="3" branch="True" condition-coverage="100% (2/2)">
+                <line number="108" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="131" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="116" hits="3" branch="False" />
-                <line number="117" hits="3" branch="False" />
-                <line number="118" hits="3" branch="False" />
-                <line number="120" hits="3" branch="False" />
-                <line number="121" hits="3" branch="False" />
+                <line number="109" hits="3" branch="False" />
+                <line number="110" hits="3" branch="False" />
+                <line number="111" hits="3" branch="False" />
+                <line number="113" hits="3" branch="False" />
+                <line number="114" hits="3" branch="False" />
               </lines>
             </method>
             <method name="IsRunningLocally" signature="()" line-rate="0" branch-rate="0" complexity="8">
               <lines>
-                <line number="124" hits="0" branch="False" />
-                <line number="126" hits="0" branch="True" condition-coverage="0% (0/4)">
+                <line number="117" hits="0" branch="False" />
+                <line number="119" hits="0" branch="True" condition-coverage="0% (0/4)">
                   <conditions>
                     <condition number="7" type="jump" coverage="0%" />
                     <condition number="23" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="127" hits="0" branch="False" />
-                <line number="128" hits="0" branch="False" />
-                <line number="132" hits="0" branch="False" />
-                <line number="133" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="120" hits="0" branch="False" />
+                <line number="121" hits="0" branch="False" />
+                <line number="125" hits="0" branch="False" />
+                <line number="126" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
                     <condition number="49" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="135" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="128" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
                     <condition number="69" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="136" hits="0" branch="False" />
-                <line number="137" hits="0" branch="False" />
-                <line number="139" hits="0" branch="False" />
+                <line number="129" hits="0" branch="False" />
+                <line number="130" hits="0" branch="False" />
+                <line number="132" hits="0" branch="False" />
+                <line number="133" hits="0" branch="False" />
+                <line number="134" hits="0" branch="False" />
+                <line number="135" hits="0" branch="False" />
                 <line number="140" hits="0" branch="False" />
                 <line number="141" hits="0" branch="False" />
-                <line number="142" hits="0" branch="False" />
-                <line number="147" hits="0" branch="False" />
-                <line number="148" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="0.8" branch-rate="1" complexity="1">
               <lines>
-                <line number="29" hits="3" branch="False" />
                 <line number="30" hits="3" branch="False" />
                 <line number="31" hits="3" branch="False" />
-                <line number="34" hits="3" branch="False" />
+                <line number="32" hits="3" branch="False" />
                 <line number="35" hits="3" branch="False" />
                 <line number="36" hits="3" branch="False" />
                 <line number="37" hits="3" branch="False" />
-                <line number="39" hits="3" branch="False" />
-                <line number="49" hits="3" branch="False" />
+                <line number="38" hits="3" branch="False" />
+                <line number="40" hits="3" branch="False" />
+                <line number="42" hits="3" branch="False" />
+                <line number="43" hits="3" branch="False" />
+                <line number="45" hits="3" branch="False" />
+                <line number="47" hits="3" branch="False" />
+                <line number="48" hits="3" branch="False" />
                 <line number="50" hits="3" branch="False" />
-                <line number="52" hits="3" branch="False" />
-                <line number="54" hits="3" branch="False" />
-                <line number="55" hits="3" branch="False" />
+                <line number="51" hits="3" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="55" hits="0" branch="False" />
                 <line number="57" hits="3" branch="False" />
-                <line number="58" hits="3" branch="False" />
-                <line number="59" hits="0" branch="False" />
-                <line number="60" hits="0" branch="False" />
-                <line number="61" hits="0" branch="False" />
-                <line number="62" hits="0" branch="False" />
-                <line number="64" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="67" hits="3" branch="False" />
-            <line number="68" hits="3" branch="True" condition-coverage="100% (2/2)">
+            <line number="60" hits="3" branch="False" />
+            <line number="61" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="13" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="69" hits="3" branch="False" />
-            <line number="70" hits="3" branch="True" condition-coverage="100% (2/2)">
+            <line number="62" hits="3" branch="False" />
+            <line number="63" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="64" type="jump" coverage="100%" />
               </conditions>
             </line>
+            <line number="64" hits="3" branch="False" />
+            <line number="65" hits="3" branch="False" />
+            <line number="66" hits="3" branch="False" />
+            <line number="68" hits="3" branch="False" />
+            <line number="69" hits="3" branch="False" />
+            <line number="70" hits="3" branch="False" />
             <line number="71" hits="3" branch="False" />
             <line number="72" hits="3" branch="False" />
             <line number="73" hits="3" branch="False" />
-            <line number="75" hits="3" branch="False" />
+            <line number="74" hits="3" branch="False" />
             <line number="76" hits="3" branch="False" />
             <line number="77" hits="3" branch="False" />
-            <line number="78" hits="3" branch="False" />
-            <line number="79" hits="3" branch="False" />
-            <line number="80" hits="3" branch="False" />
-            <line number="81" hits="3" branch="False" />
-            <line number="83" hits="3" branch="False" />
-            <line number="84" hits="3" branch="False" />
-            <line number="87" hits="0" branch="False" />
-            <line number="89" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="80" hits="0" branch="False" />
+            <line number="82" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
                 <condition number="14" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="90" hits="0" branch="False" />
-            <line number="91" hits="0" branch="False" />
-            <line number="92" hits="0" branch="False" />
-            <line number="93" hits="0" branch="False" />
-            <line number="94" hits="0" branch="False" />
-            <line number="97" hits="3" branch="False" />
-            <line number="98" hits="3" branch="True" condition-coverage="50% (1/2)">
+            <line number="83" hits="0" branch="False" />
+            <line number="84" hits="0" branch="False" />
+            <line number="85" hits="0" branch="False" />
+            <line number="86" hits="0" branch="False" />
+            <line number="87" hits="0" branch="False" />
+            <line number="90" hits="3" branch="False" />
+            <line number="91" hits="3" branch="True" condition-coverage="50% (1/2)">
               <conditions>
                 <condition number="12" type="jump" coverage="50%" />
               </conditions>
             </line>
-            <line number="99" hits="0" branch="False" />
-            <line number="100" hits="0" branch="False" />
-            <line number="103" hits="3" branch="True" condition-coverage="100% (2/2)">
+            <line number="92" hits="0" branch="False" />
+            <line number="93" hits="0" branch="False" />
+            <line number="96" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="31" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="97" hits="3" branch="False" />
+            <line number="98" hits="3" branch="False" />
+            <line number="99" hits="3" branch="False" />
+            <line number="100" hits="3" branch="False" />
+            <line number="101" hits="3" branch="False" />
+            <line number="103" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="102" type="jump" coverage="100%" />
               </conditions>
             </line>
             <line number="104" hits="3" branch="False" />
             <line number="105" hits="3" branch="False" />
             <line number="106" hits="3" branch="False" />
-            <line number="107" hits="3" branch="False" />
-            <line number="108" hits="3" branch="False" />
-            <line number="110" hits="3" branch="True" condition-coverage="100% (2/2)">
-              <conditions>
-                <condition number="102" type="jump" coverage="100%" />
-              </conditions>
-            </line>
-            <line number="111" hits="3" branch="False" />
-            <line number="112" hits="3" branch="False" />
-            <line number="113" hits="3" branch="False" />
-            <line number="115" hits="3" branch="True" condition-coverage="100% (2/2)">
+            <line number="108" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="131" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="116" hits="3" branch="False" />
-            <line number="117" hits="3" branch="False" />
-            <line number="118" hits="3" branch="False" />
-            <line number="120" hits="3" branch="False" />
-            <line number="121" hits="3" branch="False" />
-            <line number="124" hits="0" branch="False" />
-            <line number="126" hits="0" branch="True" condition-coverage="0% (0/4)">
+            <line number="109" hits="3" branch="False" />
+            <line number="110" hits="3" branch="False" />
+            <line number="111" hits="3" branch="False" />
+            <line number="113" hits="3" branch="False" />
+            <line number="114" hits="3" branch="False" />
+            <line number="117" hits="0" branch="False" />
+            <line number="119" hits="0" branch="True" condition-coverage="0% (0/4)">
               <conditions>
                 <condition number="7" type="jump" coverage="0%" />
                 <condition number="23" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="127" hits="0" branch="False" />
-            <line number="128" hits="0" branch="False" />
-            <line number="132" hits="0" branch="False" />
-            <line number="133" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="120" hits="0" branch="False" />
+            <line number="121" hits="0" branch="False" />
+            <line number="125" hits="0" branch="False" />
+            <line number="126" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
                 <condition number="49" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="135" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="128" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
                 <condition number="69" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="136" hits="0" branch="False" />
-            <line number="137" hits="0" branch="False" />
-            <line number="139" hits="0" branch="False" />
+            <line number="129" hits="0" branch="False" />
+            <line number="130" hits="0" branch="False" />
+            <line number="132" hits="0" branch="False" />
+            <line number="133" hits="0" branch="False" />
+            <line number="134" hits="0" branch="False" />
+            <line number="135" hits="0" branch="False" />
             <line number="140" hits="0" branch="False" />
             <line number="141" hits="0" branch="False" />
-            <line number="142" hits="0" branch="False" />
-            <line number="147" hits="0" branch="False" />
-            <line number="148" hits="0" branch="False" />
-            <line number="29" hits="3" branch="False" />
             <line number="30" hits="3" branch="False" />
             <line number="31" hits="3" branch="False" />
-            <line number="34" hits="3" branch="False" />
+            <line number="32" hits="3" branch="False" />
             <line number="35" hits="3" branch="False" />
             <line number="36" hits="3" branch="False" />
             <line number="37" hits="3" branch="False" />
-            <line number="39" hits="3" branch="False" />
-            <line number="49" hits="3" branch="False" />
+            <line number="38" hits="3" branch="False" />
+            <line number="40" hits="3" branch="False" />
+            <line number="42" hits="3" branch="False" />
+            <line number="43" hits="3" branch="False" />
+            <line number="45" hits="3" branch="False" />
+            <line number="47" hits="3" branch="False" />
+            <line number="48" hits="3" branch="False" />
             <line number="50" hits="3" branch="False" />
-            <line number="52" hits="3" branch="False" />
-            <line number="54" hits="3" branch="False" />
-            <line number="55" hits="3" branch="False" />
+            <line number="51" hits="3" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="55" hits="0" branch="False" />
             <line number="57" hits="3" branch="False" />
-            <line number="58" hits="3" branch="False" />
-            <line number="59" hits="0" branch="False" />
-            <line number="60" hits="0" branch="False" />
-            <line number="61" hits="0" branch="False" />
-            <line number="62" hits="0" branch="False" />
-            <line number="64" hits="3" branch="False" />
           </lines>
         </class>
         <class name="TalentConsulting.TalentSuite.Projects.FunctionalTests.CustomWebApplicationFactory`1" filename="Projects\TalentConsulting\talentsuite-project-api\tests\TalentConsulting.TalentSuite.Projects.FunctionalTests\CustomWebApplicationFactory.cs" line-rate="0" branch-rate="0" complexity="7">
@@ -5449,7 +5629,7 @@
                 <line number="52" hits="1" branch="False" />
                 <line number="55" hits="1" branch="True" condition-coverage="50% (1/2)">
                   <conditions>
-                    <condition number="156" type="jump" coverage="50%" />
+                    <condition number="164" type="jump" coverage="50%" />
                   </conditions>
                 </line>
                 <line number="56" hits="1" branch="False" />
@@ -5476,7 +5656,7 @@
             <line number="52" hits="1" branch="False" />
             <line number="55" hits="1" branch="True" condition-coverage="50% (1/2)">
               <conditions>
-                <condition number="156" type="jump" coverage="50%" />
+                <condition number="164" type="jump" coverage="50%" />
               </conditions>
             </line>
             <line number="56" hits="1" branch="False" />
@@ -5509,7 +5689,7 @@
                 <line number="89" hits="1" branch="False" />
                 <line number="91" hits="1" branch="True" condition-coverage="50% (1/2)">
                   <conditions>
-                    <condition number="158" type="jump" coverage="50%" />
+                    <condition number="166" type="jump" coverage="50%" />
                   </conditions>
                 </line>
                 <line number="92" hits="1" branch="False" />
@@ -5528,7 +5708,7 @@
                 <line number="113" hits="1" branch="False" />
                 <line number="116" hits="1" branch="True" condition-coverage="50% (1/2)">
                   <conditions>
-                    <condition number="639" type="jump" coverage="50%" />
+                    <condition number="655" type="jump" coverage="50%" />
                   </conditions>
                 </line>
                 <line number="117" hits="1" branch="False" />
@@ -5559,7 +5739,7 @@
             <line number="89" hits="1" branch="False" />
             <line number="91" hits="1" branch="True" condition-coverage="50% (1/2)">
               <conditions>
-                <condition number="158" type="jump" coverage="50%" />
+                <condition number="166" type="jump" coverage="50%" />
               </conditions>
             </line>
             <line number="92" hits="1" branch="False" />
@@ -5578,7 +5758,7 @@
             <line number="113" hits="1" branch="False" />
             <line number="116" hits="1" branch="True" condition-coverage="50% (1/2)">
               <conditions>
-                <condition number="639" type="jump" coverage="50%" />
+                <condition number="655" type="jump" coverage="50%" />
               </conditions>
             </line>
             <line number="117" hits="1" branch="False" />
@@ -5596,7 +5776,7 @@
         </class>
       </classes>
     </package>
-    <package name="TalentConsulting.TalentSuite.Projects.Infrastructure" line-rate="0.4539" branch-rate="0.3947" complexity="82">
+    <package name="TalentConsulting.TalentSuite.Projects.Infrastructure" line-rate="0.4434" branch-rate="0.4285" complexity="72">
       <classes>
         <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.ConfigureServices" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\ConfigureServices.cs" line-rate="0.5" branch-rate="0.07139999999999999" complexity="14">
           <methods>
@@ -5698,15 +5878,15 @@
           <methods>
             <method name="get_Now" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="59" branch="False" />
+                <line number="7" hits="32" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="7" hits="59" branch="False" />
+            <line number="7" hits="32" branch="False" />
           </lines>
         </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository.ApplicationDbContext" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Repository\ApplicationDbContext.cs" line-rate="0.6923" branch-rate="1" complexity="17">
+        <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository.ApplicationDbContext" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Repository\ApplicationDbContext.cs" line-rate="0.8" branch-rate="1" complexity="11">
           <methods>
             <method name="OnModelCreating" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -5724,11 +5904,6 @@
                 <line number="44" hits="10" branch="False" />
               </lines>
             </method>
-            <method name="get_Audits" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="77" hits="0" branch="False" />
-              </lines>
-            </method>
             <method name="get_Clients" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
                 <line number="78" hits="3" branch="False" />
@@ -5744,54 +5919,29 @@
                 <line number="80" hits="3" branch="False" />
               </lines>
             </method>
-            <method name="get_Notifications" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="81" hits="0" branch="False" />
-              </lines>
-            </method>
             <method name="get_Projects" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="82" hits="12" branch="False" />
+                <line number="81" hits="12" branch="False" />
               </lines>
             </method>
             <method name="get_ProjectRoles" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="83" hits="3" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Recipients" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="84" hits="0" branch="False" />
+                <line number="82" hits="3" branch="False" />
               </lines>
             </method>
             <method name="get_Reports" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="85" hits="0" branch="False" />
+                <line number="83" hits="0" branch="False" />
               </lines>
             </method>
             <method name="get_Risks" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="86" hits="0" branch="False" />
+                <line number="84" hits="0" branch="False" />
               </lines>
             </method>
             <method name="get_Sows" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="87" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Users" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="88" hits="3" branch="False" />
-              </lines>
-            </method>
-            <method name="get_UserGroups" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="89" hits="3" branch="False" />
-              </lines>
-            </method>
-            <method name="get_UserProjectRoles" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="90" hits="0" branch="False" />
+                <line number="85" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(Microsoft.EntityFrameworkCore.DbContextOptions`1&lt;TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository.ApplicationDbContext&gt;,TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Interceptors.AuditableEntitySaveChangesInterceptor)" line-rate="1" branch-rate="1" complexity="1">
@@ -5812,20 +5962,14 @@
             <line number="42" hits="10" branch="False" />
             <line number="43" hits="10" branch="False" />
             <line number="44" hits="10" branch="False" />
-            <line number="77" hits="0" branch="False" />
             <line number="78" hits="3" branch="False" />
             <line number="79" hits="0" branch="False" />
             <line number="80" hits="3" branch="False" />
-            <line number="81" hits="0" branch="False" />
-            <line number="82" hits="12" branch="False" />
-            <line number="83" hits="3" branch="False" />
+            <line number="81" hits="12" branch="False" />
+            <line number="82" hits="3" branch="False" />
+            <line number="83" hits="0" branch="False" />
             <line number="84" hits="0" branch="False" />
             <line number="85" hits="0" branch="False" />
-            <line number="86" hits="0" branch="False" />
-            <line number="87" hits="0" branch="False" />
-            <line number="88" hits="3" branch="False" />
-            <line number="89" hits="3" branch="False" />
-            <line number="90" hits="0" branch="False" />
             <line number="25" hits="10" branch="False" />
             <line number="26" hits="10" branch="False" />
             <line number="30" hits="10" branch="False" />
@@ -5850,23 +5994,21 @@
             <line number="75" hits="6" branch="False" />
           </lines>
         </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository.ApplicationDbContextInitialiser" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Repository\ApplicationDbContextInitialiser.cs" line-rate="1" branch-rate="1" complexity="6">
+        <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository.ApplicationDbContextInitialiser" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Repository\ApplicationDbContextInitialiser.cs" line-rate="0.36840000000000006" branch-rate="1" complexity="4">
           <methods>
             <method name="Clients" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="87" hits="3" branch="False" />
-                <line number="88" hits="3" branch="False" />
                 <line number="89" hits="3" branch="False" />
                 <line number="90" hits="3" branch="False" />
                 <line number="91" hits="3" branch="False" />
                 <line number="92" hits="3" branch="False" />
                 <line number="93" hits="3" branch="False" />
+                <line number="94" hits="3" branch="False" />
+                <line number="95" hits="3" branch="False" />
               </lines>
             </method>
             <method name="ProjectRoles" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="96" hits="3" branch="False" />
-                <line number="97" hits="3" branch="False" />
                 <line number="98" hits="3" branch="False" />
                 <line number="99" hits="3" branch="False" />
                 <line number="100" hits="3" branch="False" />
@@ -5874,69 +6016,48 @@
                 <line number="102" hits="3" branch="False" />
                 <line number="103" hits="3" branch="False" />
                 <line number="104" hits="3" branch="False" />
+                <line number="105" hits="3" branch="False" />
+                <line number="106" hits="3" branch="False" />
               </lines>
             </method>
-            <method name="UserGroups" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="Reports" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="107" hits="3" branch="False" />
-                <line number="108" hits="3" branch="False" />
-                <line number="109" hits="3" branch="False" />
-                <line number="110" hits="3" branch="False" />
-                <line number="111" hits="3" branch="False" />
-                <line number="112" hits="3" branch="False" />
-                <line number="113" hits="3" branch="False" />
-                <line number="114" hits="3" branch="False" />
-              </lines>
-            </method>
-            <method name="Users" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="117" hits="3" branch="False" />
-                <line number="118" hits="3" branch="False" />
-                <line number="119" hits="3" branch="False" />
-                <line number="120" hits="6" branch="False" />
-                <line number="121" hits="6" branch="False" />
-                <line number="122" hits="3" branch="False" />
-                <line number="123" hits="3" branch="False" />
-              </lines>
-            </method>
-            <method name="Reports" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="126" hits="6" branch="False" />
-                <line number="127" hits="6" branch="False" />
-                <line number="128" hits="6" branch="False" />
-                <line number="129" hits="6" branch="False" />
-                <line number="130" hits="6" branch="False" />
-                <line number="131" hits="6" branch="False" />
-                <line number="132" hits="6" branch="False" />
-                <line number="133" hits="6" branch="False" />
-                <line number="134" hits="6" branch="False" />
-                <line number="135" hits="6" branch="False" />
-                <line number="136" hits="6" branch="False" />
-                <line number="137" hits="6" branch="False" />
-                <line number="138" hits="6" branch="False" />
-                <line number="139" hits="6" branch="False" />
-                <line number="140" hits="6" branch="False" />
-                <line number="141" hits="6" branch="False" />
-                <line number="142" hits="6" branch="False" />
-                <line number="143" hits="6" branch="False" />
-                <line number="144" hits="6" branch="False" />
-                <line number="145" hits="6" branch="False" />
-                <line number="146" hits="6" branch="False" />
-                <line number="147" hits="6" branch="False" />
-                <line number="148" hits="6" branch="False" />
-                <line number="149" hits="6" branch="False" />
-                <line number="150" hits="6" branch="False" />
-                <line number="151" hits="6" branch="False" />
-                <line number="152" hits="6" branch="False" />
-                <line number="153" hits="6" branch="False" />
-                <line number="154" hits="6" branch="False" />
-                <line number="155" hits="6" branch="False" />
-                <line number="156" hits="6" branch="False" />
-                <line number="157" hits="6" branch="False" />
-                <line number="158" hits="6" branch="False" />
-                <line number="159" hits="6" branch="False" />
-                <line number="160" hits="6" branch="False" />
-                <line number="161" hits="6" branch="False" />
+                <line number="111" hits="0" branch="False" />
+                <line number="112" hits="0" branch="False" />
+                <line number="113" hits="0" branch="False" />
+                <line number="114" hits="0" branch="False" />
+                <line number="115" hits="0" branch="False" />
+                <line number="116" hits="0" branch="False" />
+                <line number="117" hits="0" branch="False" />
+                <line number="118" hits="0" branch="False" />
+                <line number="119" hits="0" branch="False" />
+                <line number="120" hits="0" branch="False" />
+                <line number="121" hits="0" branch="False" />
+                <line number="122" hits="0" branch="False" />
+                <line number="123" hits="0" branch="False" />
+                <line number="124" hits="0" branch="False" />
+                <line number="125" hits="0" branch="False" />
+                <line number="126" hits="0" branch="False" />
+                <line number="127" hits="0" branch="False" />
+                <line number="128" hits="0" branch="False" />
+                <line number="129" hits="0" branch="False" />
+                <line number="130" hits="0" branch="False" />
+                <line number="131" hits="0" branch="False" />
+                <line number="132" hits="0" branch="False" />
+                <line number="133" hits="0" branch="False" />
+                <line number="134" hits="0" branch="False" />
+                <line number="135" hits="0" branch="False" />
+                <line number="136" hits="0" branch="False" />
+                <line number="137" hits="0" branch="False" />
+                <line number="138" hits="0" branch="False" />
+                <line number="139" hits="0" branch="False" />
+                <line number="140" hits="0" branch="False" />
+                <line number="141" hits="0" branch="False" />
+                <line number="142" hits="0" branch="False" />
+                <line number="143" hits="0" branch="False" />
+                <line number="144" hits="0" branch="False" />
+                <line number="145" hits="0" branch="False" />
+                <line number="146" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(Microsoft.Extensions.Logging.ILogger`1&lt;TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository.ApplicationDbContextInitialiser&gt;,TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository.ApplicationDbContext)" line-rate="1" branch-rate="1" complexity="1">
@@ -5950,15 +6071,13 @@
             </method>
           </methods>
           <lines>
-            <line number="87" hits="3" branch="False" />
-            <line number="88" hits="3" branch="False" />
             <line number="89" hits="3" branch="False" />
             <line number="90" hits="3" branch="False" />
             <line number="91" hits="3" branch="False" />
             <line number="92" hits="3" branch="False" />
             <line number="93" hits="3" branch="False" />
-            <line number="96" hits="3" branch="False" />
-            <line number="97" hits="3" branch="False" />
+            <line number="94" hits="3" branch="False" />
+            <line number="95" hits="3" branch="False" />
             <line number="98" hits="3" branch="False" />
             <line number="99" hits="3" branch="False" />
             <line number="100" hits="3" branch="False" />
@@ -5966,57 +6085,44 @@
             <line number="102" hits="3" branch="False" />
             <line number="103" hits="3" branch="False" />
             <line number="104" hits="3" branch="False" />
-            <line number="107" hits="3" branch="False" />
-            <line number="108" hits="3" branch="False" />
-            <line number="109" hits="3" branch="False" />
-            <line number="110" hits="3" branch="False" />
-            <line number="111" hits="3" branch="False" />
-            <line number="112" hits="3" branch="False" />
-            <line number="113" hits="3" branch="False" />
-            <line number="114" hits="3" branch="False" />
-            <line number="117" hits="3" branch="False" />
-            <line number="118" hits="3" branch="False" />
-            <line number="119" hits="3" branch="False" />
-            <line number="120" hits="6" branch="False" />
-            <line number="121" hits="6" branch="False" />
-            <line number="122" hits="3" branch="False" />
-            <line number="123" hits="3" branch="False" />
-            <line number="126" hits="6" branch="False" />
-            <line number="127" hits="6" branch="False" />
-            <line number="128" hits="6" branch="False" />
-            <line number="129" hits="6" branch="False" />
-            <line number="130" hits="6" branch="False" />
-            <line number="131" hits="6" branch="False" />
-            <line number="132" hits="6" branch="False" />
-            <line number="133" hits="6" branch="False" />
-            <line number="134" hits="6" branch="False" />
-            <line number="135" hits="6" branch="False" />
-            <line number="136" hits="6" branch="False" />
-            <line number="137" hits="6" branch="False" />
-            <line number="138" hits="6" branch="False" />
-            <line number="139" hits="6" branch="False" />
-            <line number="140" hits="6" branch="False" />
-            <line number="141" hits="6" branch="False" />
-            <line number="142" hits="6" branch="False" />
-            <line number="143" hits="6" branch="False" />
-            <line number="144" hits="6" branch="False" />
-            <line number="145" hits="6" branch="False" />
-            <line number="146" hits="6" branch="False" />
-            <line number="147" hits="6" branch="False" />
-            <line number="148" hits="6" branch="False" />
-            <line number="149" hits="6" branch="False" />
-            <line number="150" hits="6" branch="False" />
-            <line number="151" hits="6" branch="False" />
-            <line number="152" hits="6" branch="False" />
-            <line number="153" hits="6" branch="False" />
-            <line number="154" hits="6" branch="False" />
-            <line number="155" hits="6" branch="False" />
-            <line number="156" hits="6" branch="False" />
-            <line number="157" hits="6" branch="False" />
-            <line number="158" hits="6" branch="False" />
-            <line number="159" hits="6" branch="False" />
-            <line number="160" hits="6" branch="False" />
-            <line number="161" hits="6" branch="False" />
+            <line number="105" hits="3" branch="False" />
+            <line number="106" hits="3" branch="False" />
+            <line number="111" hits="0" branch="False" />
+            <line number="112" hits="0" branch="False" />
+            <line number="113" hits="0" branch="False" />
+            <line number="114" hits="0" branch="False" />
+            <line number="115" hits="0" branch="False" />
+            <line number="116" hits="0" branch="False" />
+            <line number="117" hits="0" branch="False" />
+            <line number="118" hits="0" branch="False" />
+            <line number="119" hits="0" branch="False" />
+            <line number="120" hits="0" branch="False" />
+            <line number="121" hits="0" branch="False" />
+            <line number="122" hits="0" branch="False" />
+            <line number="123" hits="0" branch="False" />
+            <line number="124" hits="0" branch="False" />
+            <line number="125" hits="0" branch="False" />
+            <line number="126" hits="0" branch="False" />
+            <line number="127" hits="0" branch="False" />
+            <line number="128" hits="0" branch="False" />
+            <line number="129" hits="0" branch="False" />
+            <line number="130" hits="0" branch="False" />
+            <line number="131" hits="0" branch="False" />
+            <line number="132" hits="0" branch="False" />
+            <line number="133" hits="0" branch="False" />
+            <line number="134" hits="0" branch="False" />
+            <line number="135" hits="0" branch="False" />
+            <line number="136" hits="0" branch="False" />
+            <line number="137" hits="0" branch="False" />
+            <line number="138" hits="0" branch="False" />
+            <line number="139" hits="0" branch="False" />
+            <line number="140" hits="0" branch="False" />
+            <line number="141" hits="0" branch="False" />
+            <line number="142" hits="0" branch="False" />
+            <line number="143" hits="0" branch="False" />
+            <line number="144" hits="0" branch="False" />
+            <line number="145" hits="0" branch="False" />
+            <line number="146" hits="0" branch="False" />
             <line number="12" hits="3" branch="False" />
             <line number="13" hits="3" branch="False" />
             <line number="14" hits="3" branch="False" />
@@ -6146,9 +6252,9 @@
             <line number="61" hits="3" branch="False" />
           </lines>
         </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository.ApplicationDbContextInitialiser/&lt;TrySeedAsync&gt;d__5" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Repository\ApplicationDbContextInitialiser.cs" line-rate="0.9333" branch-rate="0.5" complexity="2">
+        <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository.ApplicationDbContextInitialiser/&lt;TrySeedAsync&gt;d__5" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Repository\ApplicationDbContextInitialiser.cs" line-rate="0.9375" branch-rate="0.6666" complexity="6">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0.9333" branch-rate="0.5" complexity="2">
+            <method name="MoveNext" signature="()" line-rate="0.9375" branch-rate="0.6666" complexity="6">
               <lines>
                 <line number="64" hits="3" branch="False" />
                 <line number="65" hits="3" branch="True" condition-coverage="50% (1/2)">
@@ -6157,18 +6263,24 @@
                   </conditions>
                 </line>
                 <line number="66" hits="0" branch="False" />
-                <line number="68" hits="3" branch="False" />
+                <line number="68" hits="3" branch="True" condition-coverage="75% (3/4)">
+                  <conditions>
+                    <condition number="69" type="jump" coverage="50%" />
+                    <condition number="97" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
                 <line number="69" hits="3" branch="False" />
                 <line number="70" hits="3" branch="False" />
                 <line number="71" hits="3" branch="False" />
                 <line number="72" hits="3" branch="False" />
+                <line number="73" hits="3" branch="False" />
                 <line number="74" hits="3" branch="False" />
                 <line number="76" hits="3" branch="False" />
                 <line number="78" hits="3" branch="False" />
-                <line number="79" hits="3" branch="False" />
                 <line number="80" hits="3" branch="False" />
+                <line number="82" hits="3" branch="False" />
                 <line number="83" hits="3" branch="False" />
-                <line number="84" hits="3" branch="False" />
+                <line number="86" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
@@ -6180,18 +6292,24 @@
               </conditions>
             </line>
             <line number="66" hits="0" branch="False" />
-            <line number="68" hits="3" branch="False" />
+            <line number="68" hits="3" branch="True" condition-coverage="75% (3/4)">
+              <conditions>
+                <condition number="69" type="jump" coverage="50%" />
+                <condition number="97" type="jump" coverage="100%" />
+              </conditions>
+            </line>
             <line number="69" hits="3" branch="False" />
             <line number="70" hits="3" branch="False" />
             <line number="71" hits="3" branch="False" />
             <line number="72" hits="3" branch="False" />
+            <line number="73" hits="3" branch="False" />
             <line number="74" hits="3" branch="False" />
             <line number="76" hits="3" branch="False" />
             <line number="78" hits="3" branch="False" />
-            <line number="79" hits="3" branch="False" />
             <line number="80" hits="3" branch="False" />
+            <line number="82" hits="3" branch="False" />
             <line number="83" hits="3" branch="False" />
-            <line number="84" hits="3" branch="False" />
+            <line number="86" hits="3" branch="False" />
           </lines>
         </class>
         <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository.EfRepository`1" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Repository\EfRepository.cs" line-rate="0" branch-rate="1" complexity="1">
@@ -6236,21 +6354,21 @@
                     <condition number="7" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="39" hits="138" branch="True" condition-coverage="100% (2/2)">
+                <line number="39" hits="84" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="89" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="40" hits="60" branch="False" />
-                <line number="41" hits="60" branch="True" condition-coverage="100% (2/2)">
+                <line number="40" hits="33" branch="False" />
+                <line number="41" hits="33" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="50" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="42" hits="59" branch="False" />
-                <line number="44" hits="59" branch="False" />
-                <line number="45" hits="59" branch="False" />
-                <line number="46" hits="60" branch="False" />
+                <line number="42" hits="32" branch="False" />
+                <line number="44" hits="32" branch="False" />
+                <line number="45" hits="32" branch="False" />
+                <line number="46" hits="33" branch="False" />
                 <line number="47" hits="6" branch="False" />
               </lines>
             </method>
@@ -6280,21 +6398,21 @@
                 <condition number="7" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="39" hits="138" branch="True" condition-coverage="100% (2/2)">
+            <line number="39" hits="84" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="89" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="40" hits="60" branch="False" />
-            <line number="41" hits="60" branch="True" condition-coverage="100% (2/2)">
+            <line number="40" hits="33" branch="False" />
+            <line number="41" hits="33" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="50" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="42" hits="59" branch="False" />
-            <line number="44" hits="59" branch="False" />
-            <line number="45" hits="59" branch="False" />
-            <line number="46" hits="60" branch="False" />
+            <line number="42" hits="32" branch="False" />
+            <line number="44" hits="32" branch="False" />
+            <line number="45" hits="32" branch="False" />
+            <line number="46" hits="33" branch="False" />
             <line number="47" hits="6" branch="False" />
             <line number="14" hits="10" branch="False" />
             <line number="15" hits="10" branch="False" />
@@ -6332,36 +6450,6 @@
             </line>
             <line number="55" hits="0" branch="False" />
             <line number="56" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Config.AuditConfiguration" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Config\AuditConfiguration.cs" line-rate="0" branch-rate="1" complexity="1">
-          <methods>
-            <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;TalentConsulting.TalentSuite.Projects.Core.Entities.Audit&gt;)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="9" hits="0" branch="False" />
-                <line number="10" hits="0" branch="False" />
-                <line number="11" hits="0" branch="False" />
-                <line number="12" hits="0" branch="False" />
-                <line number="13" hits="0" branch="False" />
-                <line number="14" hits="0" branch="False" />
-                <line number="15" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
-                <line number="18" hits="0" branch="False" />
-                <line number="20" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="9" hits="0" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
-            <line number="18" hits="0" branch="False" />
-            <line number="20" hits="0" branch="False" />
           </lines>
         </class>
         <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Config.ClientConfiguration" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Config\ClientConfiguration.cs" line-rate="0" branch-rate="1" complexity="1">
@@ -6476,54 +6564,6 @@
             <line number="24" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Config.NotificationConfiguration" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Config\NotificationConfiguration.cs" line-rate="0" branch-rate="1" complexity="1">
-          <methods>
-            <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;TalentConsulting.TalentSuite.Projects.Core.Entities.Notification&gt;)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="10" hits="0" branch="False" />
-                <line number="11" hits="0" branch="False" />
-                <line number="12" hits="0" branch="False" />
-                <line number="13" hits="0" branch="False" />
-                <line number="14" hits="0" branch="False" />
-                <line number="15" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
-                <line number="18" hits="0" branch="False" />
-                <line number="19" hits="0" branch="False" />
-                <line number="20" hits="0" branch="False" />
-                <line number="22" hits="0" branch="False" />
-                <line number="23" hits="0" branch="False" />
-                <line number="26" hits="0" branch="False" />
-                <line number="27" hits="0" branch="False" />
-                <line number="28" hits="0" branch="False" />
-                <line number="29" hits="0" branch="False" />
-                <line number="30" hits="0" branch="False" />
-                <line number="31" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
-            <line number="18" hits="0" branch="False" />
-            <line number="19" hits="0" branch="False" />
-            <line number="20" hits="0" branch="False" />
-            <line number="22" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
-            <line number="26" hits="0" branch="False" />
-            <line number="27" hits="0" branch="False" />
-            <line number="28" hits="0" branch="False" />
-            <line number="29" hits="0" branch="False" />
-            <line number="30" hits="0" branch="False" />
-            <line number="31" hits="0" branch="False" />
-          </lines>
-        </class>
         <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Config.ProjectConfiguration" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Config\ProjectConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;TalentConsulting.TalentSuite.Projects.Core.Entities.Project&gt;)" line-rate="1" branch-rate="1" complexity="1">
@@ -6609,40 +6649,6 @@
         <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Config.ProjectRoleConfiguration" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Config\ProjectRoleConfiguration.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;TalentConsulting.TalentSuite.Projects.Core.Entities.ProjectRole&gt;)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="9" hits="0" branch="False" />
-                <line number="10" hits="0" branch="False" />
-                <line number="11" hits="0" branch="False" />
-                <line number="12" hits="0" branch="False" />
-                <line number="13" hits="0" branch="False" />
-                <line number="14" hits="0" branch="False" />
-                <line number="15" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
-                <line number="19" hits="0" branch="False" />
-                <line number="20" hits="0" branch="False" />
-                <line number="21" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="9" hits="0" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
-            <line number="19" hits="0" branch="False" />
-            <line number="20" hits="0" branch="False" />
-            <line number="21" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Config.RecipientConfiguration" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Config\RecipientConfiguration.cs" line-rate="0" branch-rate="1" complexity="1">
-          <methods>
-            <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;TalentConsulting.TalentSuite.Projects.Core.Entities.Recipient&gt;)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
                 <line number="9" hits="0" branch="False" />
                 <line number="10" hits="0" branch="False" />
@@ -6804,128 +6810,6 @@
             <line number="22" hits="0" branch="False" />
             <line number="23" hits="0" branch="False" />
             <line number="24" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Config.UserConfiguration" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Config\UserConfiguration.cs" line-rate="0" branch-rate="1" complexity="1">
-          <methods>
-            <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;TalentConsulting.TalentSuite.Projects.Core.Entities.User&gt;)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="10" hits="0" branch="False" />
-                <line number="11" hits="0" branch="False" />
-                <line number="12" hits="0" branch="False" />
-                <line number="13" hits="0" branch="False" />
-                <line number="14" hits="0" branch="False" />
-                <line number="15" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
-                <line number="18" hits="0" branch="False" />
-                <line number="19" hits="0" branch="False" />
-                <line number="20" hits="0" branch="False" />
-                <line number="22" hits="0" branch="False" />
-                <line number="23" hits="0" branch="False" />
-                <line number="25" hits="0" branch="False" />
-                <line number="26" hits="0" branch="False" />
-                <line number="27" hits="0" branch="False" />
-                <line number="28" hits="0" branch="False" />
-                <line number="29" hits="0" branch="False" />
-                <line number="30" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
-            <line number="18" hits="0" branch="False" />
-            <line number="19" hits="0" branch="False" />
-            <line number="20" hits="0" branch="False" />
-            <line number="22" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
-            <line number="25" hits="0" branch="False" />
-            <line number="26" hits="0" branch="False" />
-            <line number="27" hits="0" branch="False" />
-            <line number="28" hits="0" branch="False" />
-            <line number="29" hits="0" branch="False" />
-            <line number="30" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Config.UserGroupConfiguration" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Config\UserGroupConfiguration.cs" line-rate="0" branch-rate="1" complexity="1">
-          <methods>
-            <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;TalentConsulting.TalentSuite.Projects.Core.Entities.UserGroup&gt;)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="10" hits="0" branch="False" />
-                <line number="11" hits="0" branch="False" />
-                <line number="12" hits="0" branch="False" />
-                <line number="13" hits="0" branch="False" />
-                <line number="14" hits="0" branch="False" />
-                <line number="15" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
-                <line number="18" hits="0" branch="False" />
-                <line number="19" hits="0" branch="False" />
-                <line number="22" hits="0" branch="False" />
-                <line number="23" hits="0" branch="False" />
-                <line number="24" hits="0" branch="False" />
-                <line number="25" hits="0" branch="False" />
-                <line number="26" hits="0" branch="False" />
-                <line number="27" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="18" hits="0" branch="False" />
-            <line number="19" hits="0" branch="False" />
-            <line number="22" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
-            <line number="24" hits="0" branch="False" />
-            <line number="25" hits="0" branch="False" />
-            <line number="26" hits="0" branch="False" />
-            <line number="27" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Config.UserProjectRoleConfiguration" filename="Projects\TalentConsulting\talentsuite-project-api\src\TalentConsulting.TalentSuite.Projects.Infrastructure\Config\UserProjectRoleConfiguration.cs" line-rate="0" branch-rate="1" complexity="1">
-          <methods>
-            <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;TalentConsulting.TalentSuite.Projects.Core.Entities.UserProjectRole&gt;)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="9" hits="0" branch="False" />
-                <line number="10" hits="0" branch="False" />
-                <line number="11" hits="0" branch="False" />
-                <line number="12" hits="0" branch="False" />
-                <line number="13" hits="0" branch="False" />
-                <line number="14" hits="0" branch="False" />
-                <line number="15" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
-                <line number="19" hits="0" branch="False" />
-                <line number="20" hits="0" branch="False" />
-                <line number="23" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="9" hits="0" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
-            <line number="19" hits="0" branch="False" />
-            <line number="20" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
           </lines>
         </class>
       </classes>

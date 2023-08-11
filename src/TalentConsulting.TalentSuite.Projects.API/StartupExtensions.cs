@@ -84,6 +84,7 @@ public static class StartupExtensions
 
         services.AddTransient<MinimalGeneralEndPoints>();
         services.AddTransient<MinimalProjectEndPoints>();
+        services.AddTransient<MinimalSowEndPoints>();
         services.AddTransient<ApplicationDbContextInitialiser>();
 
         services.AddSwaggerGen();
@@ -121,6 +122,9 @@ public static class StartupExtensions
 
         var projectsApi = scope.ServiceProvider.GetService<MinimalProjectEndPoints>();
         projectsApi?.RegisterProjectEndPoints(app);
+
+        var sowsApi = scope.ServiceProvider.GetService<MinimalSowEndPoints>();
+        sowsApi?.RegisterSowEndPoints(app);
 
         try
         {
