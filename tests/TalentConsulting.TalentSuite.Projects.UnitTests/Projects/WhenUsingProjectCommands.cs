@@ -238,7 +238,7 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
             },
             new List<SowDto>()
             {
-                new SowDto("946c4c15-913c-42e1-947d-b813b90f4d81", DateTime.UtcNow, new byte[] { 1 }, true, DateTime.UtcNow, DateTime.UtcNow.AddDays(1), projectId)
+                new SowDto("946c4c15-913c-42e1-947d-b813b90f4d81", DateTime.UtcNow, new List<SowFileDto>(), true, DateTime.UtcNow, DateTime.UtcNow.AddDays(1), projectId)
             });
     }
 }

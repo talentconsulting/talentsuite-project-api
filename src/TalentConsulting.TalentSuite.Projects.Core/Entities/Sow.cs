@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations.Schema;
 using TalentConsulting.TalentSuite.Projects.Common;
 using TalentConsulting.TalentSuite.Projects.Common.Interfaces;
 
@@ -13,15 +14,12 @@ public class Sow : EntityBase<string>, IAggregateRoot
     {
         Id = id;
         Created = created;
-        File = file;
         IsChangeRequest = ischangerequest;
         SowStartDate = sowstartdate;
         SowEndDate = sowenddate;
         ProjectId = projectid;
     }
 
-    //ToDo Add Sow Files table
-    public byte[] File { get; set; } = null!;
     public bool IsChangeRequest { get; set; }
     public DateTime SowStartDate { get; set; }
     public DateTime SowEndDate { get; set; }
@@ -29,5 +27,7 @@ public class Sow : EntityBase<string>, IAggregateRoot
 #if ADD_ENTITY_NAV
     public virtual Project Project { get; set; } = null!;
 #endif
+
+    public virtual ICollection<SowFile> Files { get; set; } = new Collection<SowFile>();
 
 }
