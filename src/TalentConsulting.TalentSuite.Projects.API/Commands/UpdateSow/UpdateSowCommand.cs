@@ -33,6 +33,8 @@ public class UpdateSowCommandHandler : IRequestHandler<UpdateSowCommand, string>
         _logger = logger;
     }
 
+    //Todo Attach existing files
+
     public async Task<string> Handle(UpdateSowCommand request, CancellationToken cancellationToken)
     {
         var entity = _context.Sows.FirstOrDefault(x => x.Id == request.Id);
@@ -48,12 +50,7 @@ public class UpdateSowCommandHandler : IRequestHandler<UpdateSowCommand, string>
 
         try
         {
-            //entity.ProjectId = request.SowDto.ProjectId;
-            //entity.File = request.SowDto.File;
-            //entity.IsChangeRequest = request.SowDto.IsChangeRequest;
-            //entity.SowStartDate = request.SowDto.StartDate;
-            //entity.SowEndDate = request.SowDto.EndDate;
-
+            entity.Files = AttachExistingSowFiles(request.SowDto.Files);
             await _context.SaveChangesAsync(cancellationToken);
         }
         catch (Exception ex)
@@ -63,5 +60,34 @@ public class UpdateSowCommandHandler : IRequestHandler<UpdateSowCommand, string>
         }
 
         return entity.Id;
+    }
+
+    private ICollection<SowFile> AttachExistingSowFiles(ICollection<SowFileDto>? unSavedEntities)
+    {
+        var returnList = new List<SowFile>();
+
+        if (unSavedEntities is null || !unSavedEntities.Any())
+            return returnList;
+
+        var existing = _context.SowFiles.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id)).ToList();
+
+        for (var i = 0; i < unSavedEntities.Count; i++)
+        {
+            var unSavedItem = unSavedEntities.ElementAt(i);
+            var savedItem = existing.Find(x => x.Id == unSavedItem.Id);
+
+            if (savedItem is not null)
+            {
+                savedItem.Mimetype = unSavedItem.Mimetype;
+                savedItem.Filename = unSavedItem.Filename;
+                savedItem.Size = unSavedItem.Size;
+                savedItem.SowId = unSavedItem.SowId;
+                savedItem.File = unSavedItem.File;
+            }
+
+            returnList.Add(savedItem ?? _mapper.Map<SowFile>(unSavedItem));
+        }
+
+        return returnList;
     }
 }
