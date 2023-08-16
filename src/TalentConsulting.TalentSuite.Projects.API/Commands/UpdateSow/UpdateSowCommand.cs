@@ -33,8 +33,6 @@ public class UpdateSowCommandHandler : IRequestHandler<UpdateSowCommand, string>
         _logger = logger;
     }
 
-    //Todo Attach existing files
-
     public async Task<string> Handle(UpdateSowCommand request, CancellationToken cancellationToken)
     {
         var entity = _context.Sows.FirstOrDefault(x => x.Id == request.Id);

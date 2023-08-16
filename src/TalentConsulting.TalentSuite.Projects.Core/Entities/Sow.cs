@@ -10,7 +10,7 @@ public class Sow : EntityBase<string>, IAggregateRoot
 {
     private Sow() { }
 
-    public Sow(string id, DateTime created, byte[] file, bool ischangerequest, DateTime sowstartdate, DateTime sowenddate, string projectid)
+    public Sow(string id, DateTime created, ICollection<SowFile> files, bool ischangerequest, DateTime sowstartdate, DateTime sowenddate, string projectid)
     {
         Id = id;
         Created = created;
@@ -18,6 +18,7 @@ public class Sow : EntityBase<string>, IAggregateRoot
         SowStartDate = sowstartdate;
         SowEndDate = sowenddate;
         ProjectId = projectid;
+        Files = files;
     }
 
     public bool IsChangeRequest { get; set; }

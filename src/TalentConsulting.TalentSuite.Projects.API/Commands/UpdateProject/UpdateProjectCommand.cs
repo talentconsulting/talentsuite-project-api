@@ -198,7 +198,7 @@ public class UpdateProjectCommandHandler : IRequestHandler<UpdateProjectCommand,
             if (savedItem is not null)
             {
                 savedItem.ProjectId = unSavedItem.ProjectId;
-                savedItem.Files = AttachExistingSowFiles(unSavedItem.Files); // _mapper.Map<List<SowFile>>( unSavedItem.Files);
+                savedItem.Files = AttachExistingSowFiles(unSavedItem.Files);
                 savedItem.IsChangeRequest = unSavedItem.IsChangeRequest;
                 savedItem.SowStartDate = unSavedItem.StartDate;
                 savedItem.SowEndDate = unSavedItem.EndDate;

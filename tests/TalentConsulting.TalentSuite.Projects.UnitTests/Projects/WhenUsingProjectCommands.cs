@@ -76,6 +76,34 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
     }
 
     [Fact]
+    public async Task ThenUpdateProjectUsingTheSameProject()
+    {
+        var mockApplicationDbContext = GetApplicationDbContext();
+        var dbProject = GetTestProject();
+        mockApplicationDbContext.Projects.Add(dbProject);
+        await mockApplicationDbContext.SaveChangesAsync();
+        var testProject = GetTestProjectDto();
+        var logger = new Mock<ILogger<UpdateProjectCommandHandler>>();
+
+        var command = new UpdateProjectCommand("a3226044-5c89-4257-8b07-f29745a22e2c", testProject);
+        var handler = new UpdateProjectCommandHandler(mockApplicationDbContext, _mapper, logger.Object);
+
+        //Act
+        var result = await handler.Handle(command, new CancellationToken());
+
+        //Assert
+        result.Should().NotBeNull();
+        result.Should().Be(testProject.Id);
+
+        //Act
+        var result2 = await handler.Handle(command, new CancellationToken());
+
+        //Assert
+        result2.Should().NotBeNull();
+        result2.Should().Be(testProject.Id);
+    }
+
+    [Fact]
     public async Task ThenHandle_ThrowsException_WhenProjectNotFound()
     {
         // Arrange
@@ -206,7 +234,19 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
             },
             new List<Core.Entities.Sow>()
             {
-                new Core.Entities.Sow("946c4c15-913c-42e1-947d-b813b90f4d81", DateTime.UtcNow, new byte[] { 1 }, true, DateTime.UtcNow, DateTime.UtcNow.AddDays(1), _projectId)
+                new Core.Entities.Sow("946c4c15-913c-42e1-947d-b813b90f4d81", DateTime.UtcNow, new List<SowFile>
+                { 
+                    new SowFile
+                    {
+                        Id = "bce1bb9c-36aa-4f63-9cba-d8b435a79637",
+                        Mimetype = "application/pdf",
+                        Filename = "document.pdf",
+                        Size = 1024,
+                        SowId = "67890",
+                        File = new byte[] { 0x12, 0x34, 0x56, 0x78 }
+                    }
+                }
+                , true, DateTime.UtcNow, DateTime.UtcNow.AddDays(1), _projectId)
             });
     }
 
@@ -220,7 +260,7 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
 
         var risks = new List<RiskDto>()
         {
-            new RiskDto(_riskId, _reportId, "Risk Details", "Risk Mitigation", "Risk Status" )
+            new RiskDto("75833085-ad52-4ea3-9389-ed102c30ade0", "faf41f35-5da0-409d-968a-1e50e33345aa", "Risk Details", "Risk Mitigation", "Risk Status" )
         };
 
         return new ProjectDto(projectId, "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 01, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
@@ -238,7 +278,19 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
             },
             new List<SowDto>()
             {
-                new SowDto("946c4c15-913c-42e1-947d-b813b90f4d81", DateTime.UtcNow, new List<SowFileDto>(), true, DateTime.UtcNow, DateTime.UtcNow.AddDays(1), projectId)
+                new SowDto("946c4c15-913c-42e1-947d-b813b90f4d81", DateTime.UtcNow, new List<SowFileDto>
+                {
+                    new SowFileDto
+                    {
+                        Id = "bce1bb9c-36aa-4f63-9cba-d8b435a79637",
+                        Mimetype = "application/pdf",
+                        Filename = "document.pdf",
+                        Size = 1024,
+                        SowId = "67890",
+                        File = new byte[] { 0x12, 0x34, 0x56, 0x78 }
+                    }
+
+                }, true, DateTime.UtcNow, DateTime.UtcNow.AddDays(1), projectId)
             });
     }
 }
