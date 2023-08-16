@@ -31,7 +31,7 @@ public static class EntityToDtoHelper
         {
             list.Add(new SowFileDto
             {
-                Id = "bce1bb9c-36aa-4f63-9cba-d8b435a79637",
+                Id = file.Id,
                 File = file.File,
                 Filename = file.Filename,
                 Size = file.Size,
