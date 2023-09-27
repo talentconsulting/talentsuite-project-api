@@ -5,7 +5,7 @@ EXPOSE 80 443
 
 
 # Copy Solution File to support Multi-Project
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY TalentConsulting.TalentSuite.Projects.API.sln ./
 
