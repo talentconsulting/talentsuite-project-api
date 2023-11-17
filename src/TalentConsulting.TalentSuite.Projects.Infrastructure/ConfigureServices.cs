@@ -59,6 +59,9 @@ public static class ConfigureServices
         return services;
     }
 
+
+#pragma warning disable EF1001
+
     /// <summary>A replacement for <see cref="NpgsqlSqlGenerationHelper"/>
     /// to convert PascalCaseCsharpyIdentifiers to alllowercasenames.
     /// So table and column names with no embedded punctuation
@@ -75,4 +78,5 @@ public static class ConfigureServices
         public override void DelimitIdentifier(StringBuilder builder, string identifier)
             => base.DelimitIdentifier(builder, Customize(identifier));
     }
+#pragma warning restore EF1001
 }
