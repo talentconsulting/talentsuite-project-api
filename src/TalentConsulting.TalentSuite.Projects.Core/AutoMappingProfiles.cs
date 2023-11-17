@@ -16,5 +16,6 @@ public class AutoMappingProfiles : Profile
         CreateMap<ReportDto, Report>().ReverseMap();
         CreateMap<RiskDto, Risk>().ReverseMap();
         CreateMap<SowDto, Sow>().ReverseMap();
+        CreateMap<SowFileDto, SowFile>().ReverseMap();
     }
 }
