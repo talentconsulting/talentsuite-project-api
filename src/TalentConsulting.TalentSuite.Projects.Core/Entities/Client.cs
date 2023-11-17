@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using TalentConsulting.TalentSuite.Projects.Common;
 using TalentConsulting.TalentSuite.Projects.Common.Interfaces;
 
