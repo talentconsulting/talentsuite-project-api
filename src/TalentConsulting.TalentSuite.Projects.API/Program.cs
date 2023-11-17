@@ -33,7 +33,7 @@ public class Program
 
             ServiceProvider = await app.ConfigureWebApplication();
 
-            app.UseCors(AllowReactAppForLocalDev);
+            if (builder.Environment.IsDevelopment()) app.UseCors(AllowReactAppForLocalDev);
 
             await app.RunAsync();
         }
