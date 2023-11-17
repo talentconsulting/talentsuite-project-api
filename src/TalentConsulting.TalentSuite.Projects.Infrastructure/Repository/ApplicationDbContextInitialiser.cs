@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using TalentConsulting.TalentSuite.Projects.Core.Entities;
-using TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository;
 
 namespace TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Repository;
 
@@ -19,11 +18,6 @@ public class ApplicationDbContextInitialiser
     {
         try
         {
-            if (restartDatabase)
-            {
-                await _context.Database.EnsureDeletedAsync();
-            }
-
             if (_context.Database.IsInMemory())
             {
                 await _context.Database.EnsureDeletedAsync();
@@ -32,12 +26,11 @@ public class ApplicationDbContextInitialiser
 
             if (_context.Database.IsSqlite())
             {
+                if (restartDatabase)
+                {
+                    await _context.Database.EnsureDeletedAsync();
+                }
                 await _context.Database.EnsureCreatedAsync();
-            }
-
-            if (_context.Database.IsSqlServer() || _context.Database.IsNpgsql())
-            {
-                await _context.Database.MigrateAsync();
             }
         }
         catch (Exception ex)
@@ -67,7 +60,7 @@ public class ApplicationDbContextInitialiser
 
         if (_context.Database.IsInMemory() || _context.Database.IsSqlite())
         {
-            _context.Projects.Add(new Project("86b610ee-e866-4749-9f10-4a5c59e96f2f", "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 1, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
+            _context.Projects.Add(new Core.Entities.Project("86b610ee-e866-4749-9f10-4a5c59e96f2f", "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 1, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
                 new List<ClientProject>(),
                 new List<Contact>(),
                 new List<Report>(),
@@ -80,17 +73,15 @@ public class ApplicationDbContextInitialiser
             _context.ProjectRoles.AddRange(ProjectRoles().ToArray());
 
             await _context.SaveChangesAsync();
-        }
-
-            
+        }  
     }
 
     private static List<Client> Clients() 
     {
         return new List<Client>
         {
-            new Client("83c756a8-ff87-48be-a862-096678b41817", "Harry Potter", "DfE", "harry@potter.com", new List<ClientProject>(){ new ClientProject("83c756a8-ff87-48be-a862-096678b41817", "519df403-0e0d-4c25-b240-8d9ca21132b8", "86b610ee-e866-4749-9f10-4a5c59e96f2f") } ),
-            new Client("e24a5543-6368-490a-a1d0-a18f0c69848a", "Hermione Granger", "ESFA", "hermione@granger.com", new List<ClientProject>(){ new ClientProject("51104a18-0e62-415b-91bc-6a0b83abceca", "e24a5543-6368-490a-a1d0-a18f0c69848a", "86b610ee-e866-4749-9f10-4a5c59e96f2f") } )
+            new Core.Entities.Client("83c756a8-ff87-48be-a862-096678b41817", "Harry Potter", "DfE", "harry@potter.com", new List<ClientProject>(){ new ClientProject("83c756a8-ff87-48be-a862-096678b41817", "519df403-0e0d-4c25-b240-8d9ca21132b8", "86b610ee-e866-4749-9f10-4a5c59e96f2f") } ),
+            new Core.Entities.Client("e24a5543-6368-490a-a1d0-a18f0c69848a", "Hermione Granger", "ESFA", "hermione@granger.com", new List<ClientProject>(){ new ClientProject("51104a18-0e62-415b-91bc-6a0b83abceca", "e24a5543-6368-490a-a1d0-a18f0c69848a", "86b610ee-e866-4749-9f10-4a5c59e96f2f") } )
         };
     }
 
