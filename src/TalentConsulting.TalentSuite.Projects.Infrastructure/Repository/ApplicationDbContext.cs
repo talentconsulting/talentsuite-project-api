@@ -83,5 +83,6 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
     public DbSet<Report> Reports => Set<Report>();
     public DbSet<Risk> Risks => Set<Risk>();
     public DbSet<Sow> Sows => Set<Sow>();
-    
+    public DbSet<SowFile> SowFiles => Set<SowFile>();
+
 }

@@ -198,13 +198,42 @@ public class UpdateProjectCommandHandler : IRequestHandler<UpdateProjectCommand,
             if (savedItem is not null)
             {
                 savedItem.ProjectId = unSavedItem.ProjectId;
-                savedItem.File = unSavedItem.File;
+                savedItem.Files = AttachExistingSowFiles(unSavedItem.Files);
                 savedItem.IsChangeRequest = unSavedItem.IsChangeRequest;
                 savedItem.SowStartDate = unSavedItem.StartDate;
                 savedItem.SowEndDate = unSavedItem.EndDate;
             }
 
             returnList.Add(savedItem ?? _mapper.Map<Sow>(unSavedItem));
+        }
+
+        return returnList;
+    }
+
+    private ICollection<SowFile> AttachExistingSowFiles(ICollection<SowFileDto>? unSavedEntities)
+    {
+        var returnList = new List<SowFile>();
+
+        if (unSavedEntities is null || !unSavedEntities.Any())
+            return returnList;
+
+        var existing = _context.SowFiles.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id)).ToList();
+
+        for (var i = 0; i < unSavedEntities.Count; i++)
+        {
+            var unSavedItem = unSavedEntities.ElementAt(i);
+            var savedItem = existing.Find(x => x.Id == unSavedItem.Id);
+
+            if (savedItem is not null)
+            {
+                savedItem.Mimetype = unSavedItem.Mimetype;
+                savedItem.Filename = unSavedItem.Filename;
+                savedItem.Size = unSavedItem.Size;
+                savedItem.SowId = unSavedItem.SowId;
+                savedItem.File = unSavedItem.File;
+            }
+
+            returnList.Add(savedItem ?? _mapper.Map<SowFile>(unSavedItem));
         }
 
         return returnList;

@@ -2,14 +2,8 @@
 using FluentAssertions;
 using Microsoft.Extensions.Logging;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TalentConsulting.TalentSuite.Projects.API.Commands.DeleteSow;
-using TalentConsulting.TalentSuite.Projects.API.Commands.UpdateProject;
-using TalentConsulting.TalentSuite.Projects.API.Queries.GetProjects;
+using TalentConsulting.TalentSuite.Projects.API.Commands.UpdateSow;
 using TalentConsulting.TalentSuite.Projects.API.Queries.GetSows;
 using TalentConsulting.TalentSuite.Projects.UnitTests.Projects;
 
@@ -69,5 +63,24 @@ public class WhenUsingSowCommands : BaseCreateDbUnitTest
 
         //Assert
         result.Should().BeTrue();
+    }
+
+    [Fact]
+    public async Task ThenUpdateSow()
+    {
+        var mockApplicationDbContext = GetApplicationDbContext();
+        var dbProject = WhenUsingProjectCommands.GetTestProject();
+        mockApplicationDbContext.Projects.Add(dbProject);
+        await mockApplicationDbContext.SaveChangesAsync();
+        var sow = WhenUsingProjectCommands.GetTestProjectDto().Sows.ElementAt(0);
+
+        var command = new UpdateSowCommand(sow.Id, sow);
+        var handler = new UpdateSowCommandHandler(mockApplicationDbContext, _mapper, new Mock<ILogger<UpdateSowCommandHandler>>().Object);
+
+        //Act
+        string result = await handler.Handle(command, new CancellationToken());
+
+        //Assert
+        result.Should().Be(sow.Id);
     }
 }

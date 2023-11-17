@@ -9,8 +9,6 @@ public class SowConfiguration
     {
         builder.Property(t => t.Id)
             .IsRequired();
-        builder.Property(t => t.File)
-            .IsRequired();
         builder.Property(t => t.IsChangeRequest)
             .IsRequired();
         builder.Property(t => t.SowStartDate)
