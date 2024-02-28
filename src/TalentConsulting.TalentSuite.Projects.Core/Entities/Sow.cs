@@ -6,11 +6,11 @@ using TalentConsulting.TalentSuite.Projects.Common.Interfaces;
 namespace TalentConsulting.TalentSuite.Projects.Core.Entities;
 
 [Table("sows")]
-public class Sow : EntityBase<string>, IAggregateRoot
+public class Sow : EntityBaseEx<Guid>, IAggregateRoot
 {
     private Sow() { }
 
-    public Sow(string id, DateTime created, ICollection<SowFile> files, bool ischangerequest, DateTime sowstartdate, DateTime sowenddate, string projectid)
+    public Sow(Guid id, DateTime created, ICollection<SowFile> files, bool ischangerequest, DateTime sowstartdate, DateTime sowenddate, Guid projectid)
     {
         Id = id;
         Created = created;
@@ -24,7 +24,7 @@ public class Sow : EntityBase<string>, IAggregateRoot
     public bool IsChangeRequest { get; set; }
     public DateTime SowStartDate { get; set; }
     public DateTime SowEndDate { get; set; }
-    public string ProjectId { get; set; } = null!;
+    public Guid ProjectId { get; set; }
 #if ADD_ENTITY_NAV
     public virtual Project Project { get; set; } = null!;
 #endif

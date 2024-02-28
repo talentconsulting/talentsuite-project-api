@@ -14,8 +14,5 @@ public class ClientProjectConfiguration
         builder.Property(t => t.ProjectId)
             .IsRequired();
 
-        builder.Property(t => t.Created)
-            .IsRequired();
-
     }
 }

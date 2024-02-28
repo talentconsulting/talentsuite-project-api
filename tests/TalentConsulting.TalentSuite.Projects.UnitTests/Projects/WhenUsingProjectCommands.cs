@@ -185,7 +185,7 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
         await mockApplicationDbContext.SaveChangesAsync();
 
 
-        var command = new GetProjectByIdCommand(dbProject.Id);
+        var command = new GetProjectByIdCommand(dbProject.Id.ToString());
         var handler = new GetProjectByIdCommandHandler(mockApplicationDbContext);
 
         //Act
@@ -217,11 +217,11 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
         return new Project(_projectId, "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 01, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
             new List<ClientProject>()
             {
-                new ClientProject("d0ec8781-28ed-43dc-8840-e18ac1d255e8",_clientId,_projectId)
+                new ClientProject(new Guid("d0ec8781-28ed-43dc-8840-e18ac1d255e8"),_clientId,_projectId)
             },
             new List<Contact>()
             {
-                new Contact("8585578d-8ac0-4613-96ff-89403c56a2c7", "firstname", "email@email.com", true, _projectId)
+                new Contact(new Guid("8585578d-8ac0-4613-96ff-89403c56a2c7"), "firstname", "email@email.com", true, _projectId)
             },
             new List<Report>()
             {
@@ -234,11 +234,11 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
             },
             new List<Core.Entities.Sow>()
             {
-                new Core.Entities.Sow("946c4c15-913c-42e1-947d-b813b90f4d81", DateTime.UtcNow, new List<SowFile>
-                { 
+                new Core.Entities.Sow(new Guid("946c4c15-913c-42e1-947d-b813b90f4d81"), DateTime.UtcNow, new List<SowFile>
+                {
                     new SowFile
                     {
-                        Id = "bce1bb9c-36aa-4f63-9cba-d8b435a79637",
+                        Id = new Guid("bce1bb9c-36aa-4f63-9cba-d8b435a79637"),
                         Mimetype = "application/pdf",
                         Filename = "document.pdf",
                         Size = 1024,
@@ -252,7 +252,8 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
 
     public static ProjectDto GetTestProjectDto(bool changeProjectId = false)
     {
-        string projectId = _projectId;
+        string projectId = _projectId.ToString();
+        
         if (changeProjectId)
         {
             projectId = Guid.NewGuid().ToString();
@@ -260,13 +261,13 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
 
         var risks = new List<RiskDto>()
         {
-            new RiskDto("75833085-ad52-4ea3-9389-ed102c30ade0", "faf41f35-5da0-409d-968a-1e50e33345aa", "Risk Details", "Risk Mitigation", "Risk Status" )
+            new RiskDto(_riskId.ToString(), _reportId.ToString(), "Risk Details", "Risk Mitigation", "Risk Status" )
         };
 
         return new ProjectDto(projectId, "0121 111 2222", "Social work CPD", "con_23sds", new DateTime(2023, 10, 01, 0, 0, 0, DateTimeKind.Utc), new DateTime(2023, 03, 31, 0, 0, 0, DateTimeKind.Utc),
             new List<ClientProjectDto>()
             {
-                new ClientProjectDto("d0ec8781-28ed-43dc-8840-e18ac1d255e8",_clientId,projectId)
+                new ClientProjectDto("d0ec8781-28ed-43dc-8840-e18ac1d255e8",_clientId.ToString(),projectId)
             },
             new List<ContactDto>()
             {
@@ -274,7 +275,7 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
             },
             new List<ReportDto>()
             {
-                new ReportDto("faf41f35-5da0-409d-968a-1e50e33345aa", DateTime.UtcNow.AddDays(-1), "Planned tasks", "Completed tasks", 1, DateTime.UtcNow, projectId, _userId,risks)
+                new ReportDto(_reportId.ToString(), DateTime.UtcNow.AddDays(-1), "Planned tasks", "Completed tasks", 1, DateTime.UtcNow, projectId, _userId.ToString(),risks)
             },
             new List<SowDto>()
             {

@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 using TalentConsulting.TalentSuite.Projects.Common;
 using TalentConsulting.TalentSuite.Projects.Common.Interfaces;
 
 namespace TalentConsulting.TalentSuite.Projects.Core.Entities;
 
+[ExcludeFromCodeCoverage]
 [Table("projects")]
-public class Project : EntityBase<string>, IAggregateRoot
+public class Project : EntityBaseEx<Guid>, IAggregateRoot
 {
     private Project() { }
 
-    public Project(string id, string contactNumber, string name, string reference, DateTime startDate, DateTime endDate,
+    public Project(Guid id, string contactNumber, string name, string reference, DateTime startDate, DateTime endDate,
         ICollection<ClientProject> clientProjects,
         ICollection<Contact> contacts,
         ICollection<Report> reports,
@@ -28,7 +30,7 @@ public class Project : EntityBase<string>, IAggregateRoot
         Contacts = contacts;
         Reports = reports;
         Sows = sows;
-        
+
     }
 
     public string ContactNumber { get; set; } = null!;
@@ -36,7 +38,7 @@ public class Project : EntityBase<string>, IAggregateRoot
     public string Reference { get; set; } = null!;
     public DateTime StartDate { get; set; }
     public DateTime EndDate { get; set; }
-    public virtual ICollection<ClientProject> ClientProjects { get; set;  } = new Collection<ClientProject>();
+    public virtual ICollection<ClientProject> ClientProjects { get; set; } = new Collection<ClientProject>();
 
     public virtual ICollection<Contact> Contacts { get; set; } = new Collection<Contact>();
 
@@ -44,3 +46,4 @@ public class Project : EntityBase<string>, IAggregateRoot
 
     public virtual ICollection<Sow> Sows { get; set; } = new Collection<Sow>();
 }
+

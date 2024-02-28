@@ -33,7 +33,7 @@ public class UpdateProjectCommandHandler : IRequestHandler<UpdateProjectCommand,
     }
     public async Task<string> Handle(UpdateProjectCommand request, CancellationToken cancellationToken)
     {
-        var entity = _context.Projects.FirstOrDefault(x => x.Id == request.Id);
+        var entity = _context.Projects.FirstOrDefault(x => x.Id.ToString() == request.Id);
         if (entity == null)
         {
             throw new NotFoundException(nameof(Project), request.Id);
@@ -73,17 +73,25 @@ public class UpdateProjectCommandHandler : IRequestHandler<UpdateProjectCommand,
         if (unSavedEntities is null || !unSavedEntities.Any())
             return returnList;
 
-        var existing = _context.ClientProjects.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id)).ToList();
+        var existing = _context.ClientProjects.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id.ToString())).ToList();
 
         for (var i = 0; i < unSavedEntities.Count; i++)
         {
             var unSavedItem = unSavedEntities.ElementAt(i);
-            var savedItem = existing.Find(x => x.Id == unSavedItem.Id);
+            var savedItem = existing.Find(x => x.Id.ToString() == unSavedItem.Id);
 
             if (savedItem is not null)
             {
-                savedItem.ClientId = unSavedItem.ClientId;
-                savedItem.ProjectId = unSavedItem.ClientId;
+                if (!Guid.TryParse(unSavedItem.ProjectId, out Guid projectId))
+                {
+                    throw new ArgumentException("Invalid Guid for unSavedItem.ProjectId");
+                }
+                if (!Guid.TryParse(unSavedItem.ClientId, out Guid clientId))
+                {
+                    throw new ArgumentException("Invalid Guid for unSavedItem.ClientId");
+                }
+                savedItem.ClientId = clientId;
+                savedItem.ProjectId = projectId;
 
             }
 
@@ -101,19 +109,23 @@ public class UpdateProjectCommandHandler : IRequestHandler<UpdateProjectCommand,
         if (unSavedEntities is null || !unSavedEntities.Any())
             return returnList;
 
-        var existing = _context.Contacts.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id)).ToList();
+        var existing = _context.Contacts.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id.ToString())).ToList();
 
         for (var i = 0; i < unSavedEntities.Count; i++)
         {
             var unSavedItem = unSavedEntities.ElementAt(i);
-            var savedItem = existing.Find(x => x.Id == unSavedItem.Id);
+            var savedItem = existing.Find(x => x.Id.ToString() == unSavedItem.Id);
 
             if (savedItem is not null)
             {
                 savedItem.Firstname = unSavedItem.Firstname;
                 savedItem.Email = unSavedItem.Email;
                 savedItem.ReceivesReport = unSavedItem.ReceivesReport;
-                savedItem.ProjectId = unSavedItem.ProjectId;
+                if (!Guid.TryParse(unSavedItem.ProjectId, out Guid projectId))
+                {
+                    throw new ArgumentException("Invalid Guid for unSavedItem.ProjectId");
+                }
+                savedItem.ProjectId = projectId;
             }
 
             returnList.Add(savedItem ?? _mapper.Map<Contact>(unSavedItem));
@@ -129,23 +141,40 @@ public class UpdateProjectCommandHandler : IRequestHandler<UpdateProjectCommand,
         if (unSavedEntities is null || !unSavedEntities.Any())
             return returnList;
 
-        var existing = _context.Reports.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id)).ToList();
+        var existing = _context.Reports.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id.ToString())).ToList();
 
         for (var i = 0; i < unSavedEntities.Count; i++)
         {
             var unSavedItem = unSavedEntities.ElementAt(i);
-            var savedItem = existing.Find(x => x.Id == unSavedItem.Id);
+            var savedItem = existing.Find(x => x.Id.ToString() == unSavedItem.Id);
 
             if (savedItem is not null)
             {
                 savedItem.PlannedTasks = unSavedItem.PlannedTasks;
                 savedItem.CompletedTasks = unSavedItem.CompletedTasks;
                 savedItem.Weeknumber = unSavedItem.Weeknumber;
-                savedItem.ProjectId = unSavedItem.ProjectId;
+                if (!Guid.TryParse(unSavedItem.ProjectId, out Guid projectId))
+                {
+                    throw new ArgumentException("Invalid Guid for unSavedItem.ProjectId");
+                }
+                savedItem.ProjectId = projectId;
                 savedItem.SubmissionDate = unSavedItem.SubmissionDate;
-                savedItem.UserId = unSavedItem.UserId;
+                if (!Guid.TryParse(unSavedItem.UserId, out Guid userId))
+                {
+                    throw new ArgumentException("Invalid Guid for unSavedItem.UserId");
+                }
+                savedItem.UserId = userId;
                 savedItem.Risks = AttachExistingRisks(unSavedItem.Risks);
             }
+
+            var item = savedItem ?? _mapper.Map<Report>(unSavedItem);
+
+            if (savedItem is null)
+            {
+                var risks = AttachExistingRisks(unSavedItem.Risks);
+                item.Risks = risks;
+            }
+                
 
             returnList.Add(savedItem ?? _mapper.Map<Report>(unSavedItem));
         }
@@ -160,16 +189,20 @@ public class UpdateProjectCommandHandler : IRequestHandler<UpdateProjectCommand,
         if (unSavedEntities is null || !unSavedEntities.Any())
             return returnList;
 
-        var existing = _context.Risks.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id)).ToList();
+        var existing = _context.Risks.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id.ToString())).ToList();
 
         for (var i = 0; i < unSavedEntities.Count; i++)
         {
             var unSavedItem = unSavedEntities.ElementAt(i);
-            var savedItem = existing.Find(x => x.Id == unSavedItem.Id);
+            var savedItem = existing.Find(x => x.Id.ToString() == unSavedItem.Id);
 
             if (savedItem is not null)
             {
-                savedItem.ReportId = unSavedItem.ReportId;
+                if (!Guid.TryParse(unSavedItem.ReportId, out Guid reportId))
+                {
+                    throw new ArgumentException("Invalid Guid for unSavedItem.ReportId");
+                }
+                savedItem.ReportId = reportId;
                 savedItem.RiskDetails = unSavedItem.RiskDetails;
                 savedItem.RiskMitigation = unSavedItem.RiskMitigation;
                 savedItem.RagStatus = unSavedItem.RagStatus;
@@ -188,16 +221,20 @@ public class UpdateProjectCommandHandler : IRequestHandler<UpdateProjectCommand,
         if (unSavedEntities is null || !unSavedEntities.Any())
             return returnList;
 
-        var existing = _context.Sows.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id)).ToList();
+        var existing = _context.Sows.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id.ToString())).ToList();
 
         for (var i = 0; i < unSavedEntities.Count; i++)
         {
             var unSavedItem = unSavedEntities.ElementAt(i);
-            var savedItem = existing.Find(x => x.Id == unSavedItem.Id);
+            var savedItem = existing.Find(x => x.Id.ToString() == unSavedItem.Id);
 
             if (savedItem is not null)
             {
-                savedItem.ProjectId = unSavedItem.ProjectId;
+                if (!Guid.TryParse(unSavedItem.ProjectId, out Guid projectId))
+                {
+                    throw new ArgumentException("Invalid Guid for unSavedItem.ProjectId");
+                }
+                savedItem.ProjectId = projectId;
                 savedItem.Files = AttachExistingSowFiles(unSavedItem.Files);
                 savedItem.IsChangeRequest = unSavedItem.IsChangeRequest;
                 savedItem.SowStartDate = unSavedItem.StartDate;
@@ -217,12 +254,12 @@ public class UpdateProjectCommandHandler : IRequestHandler<UpdateProjectCommand,
         if (unSavedEntities is null || !unSavedEntities.Any())
             return returnList;
 
-        var existing = _context.SowFiles.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id)).ToList();
+        var existing = _context.SowFiles.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id.ToString())).ToList();
 
         for (var i = 0; i < unSavedEntities.Count; i++)
         {
             var unSavedItem = unSavedEntities.ElementAt(i);
-            var savedItem = existing.Find(x => x.Id == unSavedItem.Id);
+            var savedItem = existing.Find(x => x.Id.ToString() == unSavedItem.Id);
 
             if (savedItem is not null)
             {

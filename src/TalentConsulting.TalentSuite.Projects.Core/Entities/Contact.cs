@@ -5,11 +5,11 @@ using TalentConsulting.TalentSuite.Projects.Common.Interfaces;
 namespace TalentConsulting.TalentSuite.Projects.Core.Entities;
 
 [Table("contacts")]
-public class Contact : EntityBase<string>, IAggregateRoot
+public class Contact : EntityBase<Guid>, IAggregateRoot
 {
     private Contact() { }
 
-    public Contact(string id, string firstname, string email, bool receivesreport, string projectId)
+    public Contact(Guid id, string firstname, string email, bool receivesreport, Guid projectId)
     {
         Id = id;
         Firstname = firstname;
@@ -21,10 +21,11 @@ public class Contact : EntityBase<string>, IAggregateRoot
     public string Firstname { get; set; } = default!;
     public string Email { get; set; } = default!;
     public bool ReceivesReport { get; set; } = default!;
-    public string ProjectId { get; set; } = default!;
+    public Guid ProjectId { get; set; }
 #if ADD_ENTITY_NAV
     public virtual Project Project { get; set; } = null!;
 #endif
 
 }
+
 

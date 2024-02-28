@@ -16,7 +16,5 @@ public class ProjectRoleConfiguration
         builder.Property(t => t.Description)
             .IsRequired();
 
-        builder.Property(t => t.Created)
-            .IsRequired();
     }
 }

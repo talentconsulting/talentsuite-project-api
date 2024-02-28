@@ -2,7 +2,7 @@
 
 namespace TalentConsulting.TalentSuite.Projects.Core.Entities;
 
-public class SowFile : EntityBase<string>
+public class SowFile : EntityBase<Guid>
 {
     public required string Mimetype { get; set; }
     public required string Filename { get; set; }

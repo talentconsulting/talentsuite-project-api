@@ -78,9 +78,9 @@ public class WhenUsingSowCommands : BaseCreateDbUnitTest
         var handler = new UpdateSowCommandHandler(mockApplicationDbContext, _mapper, new Mock<ILogger<UpdateSowCommandHandler>>().Object);
 
         //Act
-        string result = await handler.Handle(command, new CancellationToken());
+        Guid result = await handler.Handle(command, new CancellationToken());
 
         //Assert
-        result.Should().Be(sow.Id);
+        result.ToString().Should().Be(sow.Id);
     }
 }

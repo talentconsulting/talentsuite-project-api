@@ -35,14 +35,14 @@ public class GetProjectByIdCommandHandler : IRequestHandler<GetProjectByIdComman
             .Include(x => x.Reports)
             .ThenInclude(x => x.Risks)
             .Include(x => x.Sows)
-            .FirstOrDefaultAsync(p => p.Id == request.Id, cancellationToken: cancellationToken);
+            .FirstOrDefaultAsync(p => p.Id.ToString() == request.Id, cancellationToken: cancellationToken);
 
         if (entity == null)
         {
             throw new NotFoundException(nameof(Project), request.Id);
         }
 
-        var result = EntityToDtoHelper.ProjectDtoToProjectDto(entity);
+        var result = EntityToDtoHelper.ProjectToProjectDto(entity);
 
         return result;
     }
