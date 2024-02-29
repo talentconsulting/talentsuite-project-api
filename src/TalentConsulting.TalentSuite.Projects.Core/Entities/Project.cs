@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
 using TalentConsulting.TalentSuite.Projects.Common;
@@ -14,14 +12,14 @@ public class Project : EntityBaseEx<Guid>, IAggregateRoot
 {
     private Project() { }
 
-    public Project(Guid id, string contactNumber, string name, string reference, DateTime startDate, DateTime endDate,
+    public Project(Guid id, string contractNumber, string name, string reference, DateTime startDate, DateTime endDate,
         ICollection<ClientProject> clientProjects,
         ICollection<Contact> contacts,
         ICollection<Report> reports,
         ICollection<Sow> sows)
     {
         Id = id;
-        ContactNumber = contactNumber;
+        ContractNumber = contractNumber;
         Name = name;
         Reference = reference;
         StartDate = startDate;
@@ -33,7 +31,7 @@ public class Project : EntityBaseEx<Guid>, IAggregateRoot
 
     }
 
-    public string ContactNumber { get; set; } = null!;
+    public string ContractNumber { get; set; } = null!;
     public string Name { get; set; } = null!;
     public string Reference { get; set; } = null!;
     public DateTime StartDate { get; set; }

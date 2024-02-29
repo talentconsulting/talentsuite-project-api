@@ -1,8 +1,10 @@
 ﻿using MediatR;
+using System.Diagnostics.CodeAnalysis;
 using TalentConsulting.TalentSuite.Projects.Common.Interfaces;
 
 namespace TalentConsulting.TalentSuite.Projects.Common;
 
+[ExcludeFromCodeCoverage]
 public class DomainEventDispatcher : IDomainEventDispatcher
 {
     private readonly IMediator _mediator;

@@ -1,8 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System.Diagnostics.CodeAnalysis;
 using TalentConsulting.TalentSuite.Projects.Core.Entities;
 
 namespace TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Config;
 
+[ExcludeFromCodeCoverage]
 public class ContactConfiguration
 {
     public void Configure(EntityTypeBuilder<Contact> builder)

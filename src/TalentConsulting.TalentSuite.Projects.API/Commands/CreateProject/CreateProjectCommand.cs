@@ -56,7 +56,7 @@ public class CreateProjectCommandHandler : IRequestHandler<CreateProjectCommand,
             throw;
         }
 
-        if (request is not null && request.ProjectDto is not null)
+        if (request.ProjectDto is not null)
             return request.ProjectDto.Id;
         else
             return string.Empty;

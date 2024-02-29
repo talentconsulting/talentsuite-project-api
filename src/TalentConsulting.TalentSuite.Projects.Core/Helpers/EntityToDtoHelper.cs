@@ -10,7 +10,7 @@ public static class EntityToDtoHelper
     {
         return new ProjectDto(
              id: entity.Id.ToString(),
-          contactNumber: entity.ContactNumber,
+          contractNumber: entity.ContractNumber,
           name: entity.Name,
           reference: entity.Reference,
           startDate: entity.StartDate,

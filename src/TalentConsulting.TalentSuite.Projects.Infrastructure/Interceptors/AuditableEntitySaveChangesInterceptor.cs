@@ -1,12 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using TalentConsulting.TalentSuite.Projects.Common;
 using TalentConsulting.TalentSuite.Projects.Common.Interfaces;
 using TalentConsulting.TalentSuite.Projects.Core;
 
 namespace TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Interceptors;
 
+[ExcludeFromCodeCoverage]
 public class AuditableEntitySaveChangesInterceptor : SaveChangesInterceptor
 {
     private readonly IDateTime _dateTime;

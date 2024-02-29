@@ -1,7 +1,9 @@
 ﻿using FluentValidation;
+using System.Diagnostics.CodeAnalysis;
 
 namespace TalentConsulting.TalentSuite.Projects.API.Commands.UpdateSow;
 
+[ExcludeFromCodeCoverage]
 public class UpdateSowCommandValidator : AbstractValidator<UpdateSowCommand>
 {
     public UpdateSowCommandValidator()
