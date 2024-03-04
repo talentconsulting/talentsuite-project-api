@@ -44,7 +44,8 @@ public class UpdateSowCommandHandler : IRequestHandler<UpdateSowCommand, Guid>
             throw new NotFoundException(nameof(Project), request.Id);
         }
 
-        entity = _mapper.Map<Sow>(request.SowDto);
+        _mapper.Map(request.SowDto, entity);
+
         ArgumentNullException.ThrowIfNull(entity);
 
         await _context.SaveChangesAsync(cancellationToken);
