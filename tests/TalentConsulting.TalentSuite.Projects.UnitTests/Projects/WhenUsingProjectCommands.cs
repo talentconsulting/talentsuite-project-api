@@ -61,10 +61,22 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
         var dbProject = GetTestProject();
         mockApplicationDbContext.Projects.Add(dbProject);
         await mockApplicationDbContext.SaveChangesAsync();
-        var testProject = GetTestProjectDto();
+
+        var expectedProject = mockApplicationDbContext.Projects.Find(dbProject.Id);
+        ArgumentNullException.ThrowIfNull(expectedProject);
+        expectedProject.Name = "Updated Project 1";
+        expectedProject.ContractNumber = "Updated Contract 1";
+        expectedProject.Contacts.ElementAt(0).Firstname = "Updated First Name";
+        expectedProject.Contacts.ElementAt(0).Email = "newemail@email.com";
+        expectedProject.Reports.ElementAt(0).PlannedTasks = "Updated Planned Tasks";
+        expectedProject.Reports.ElementAt(0).CompletedTasks = "Updated Completed Tasks";
+        expectedProject.Sows.ElementAt(0).Files.ElementAt(0).Filename = "Updated Document.pdf";
+
+        var testProject = _mapper.Map<ProjectDto>(expectedProject);
+
         var logger = new Mock<ILogger<UpdateProjectCommandHandler>>();
 
-        var command = new UpdateProjectCommand("a3226044-5c89-4257-8b07-f29745a22e2c", testProject);
+        var command = new UpdateProjectCommand(testProject.Id, testProject);
         var handler = new UpdateProjectCommandHandler(mockApplicationDbContext, _mapper, logger.Object);
 
         //Act
@@ -73,6 +85,8 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
         //Assert
         result.Should().NotBeNull();
         result.Should().Be(testProject.Id);
+        mockApplicationDbContext.Projects.Find(expectedProject.Id).Should().NotBeNull();
+        mockApplicationDbContext.Projects.Find(expectedProject.Id).Should().BeEquivalentTo(expectedProject);
     }
 
     [Fact]
@@ -117,7 +131,7 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
 
         // Act
         //Assert
-        await Assert.ThrowsAsync<NullReferenceException>(() => handler.Handle(command, CancellationToken.None));
+        await Assert.ThrowsAsync<NotFoundException>(() => handler.Handle(command, CancellationToken.None));
 
     }
 
