@@ -1,9 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System.Diagnostics.CodeAnalysis;
 using TalentConsulting.TalentSuite.Projects.Core.Entities;
 
 namespace TalentConsulting.TalentSuite.Projects.Infrastructure.Persistence.Config;
 
+[ExcludeFromCodeCoverage]
 public class ClientConfiguration
 {
     public void Configure(EntityTypeBuilder<Client> builder)
@@ -16,10 +18,6 @@ public class ClientConfiguration
             .IsRequired();
         builder.Property(t => t.ContactEmail)
             .IsRequired();
-
-        builder.Property(t => t.Created)
-            .IsRequired();
-
 
         builder.HasMany(s => s.ClientProjects)
             .WithOne()

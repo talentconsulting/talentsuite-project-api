@@ -5,11 +5,11 @@ using TalentConsulting.TalentSuite.Projects.Common.Interfaces;
 namespace TalentConsulting.TalentSuite.Projects.Core.Entities;
 
 [Table("projectroles")]
-public class ProjectRole : EntityBase<string>, IAggregateRoot
+public class ProjectRole : EntityBase<Guid>, IAggregateRoot
 {
     private ProjectRole() { }
 
-    public ProjectRole(string id, string name, bool technical, string description)
+    public ProjectRole(Guid id, string name, bool technical, string description)
     {
         Id = id;
         Name = name;

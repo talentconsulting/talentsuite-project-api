@@ -1,5 +1,8 @@
-﻿namespace TalentConsulting.TalentSuite.Projects.Common;
+﻿using System.Diagnostics.CodeAnalysis;
 
+namespace TalentConsulting.TalentSuite.Projects.Common;
+
+[ExcludeFromCodeCoverage]
 [Serializable]
 public abstract class ValueObjectBase
 {

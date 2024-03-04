@@ -86,7 +86,7 @@ public class WhenValidatingUpdateProject : BaseTestValidation
     }
 
     [Fact]
-    public void ThenShouldErrorWhenModelHasNoContactNumber()
+    public void ThenShouldErrorWhenModelHasNoContractNumber()
     {
         //Arrange
         var validator = new UpdateProjectCommandValidator();
@@ -100,7 +100,7 @@ public class WhenValidatingUpdateProject : BaseTestValidation
         var result = validator.Validate(testModel);
 
         //Assert
-        result.Errors.Exists(x => x.PropertyName == "ProjectDto.ContactNumber").Should().BeTrue();
+        result.Errors.Exists(x => x.PropertyName == "ProjectDto.ContractNumber").Should().BeTrue();
     }
     [Fact]
     public void ThenShouldErrorWhenModelHasNoReferance()

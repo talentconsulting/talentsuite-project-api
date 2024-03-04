@@ -1,7 +1,9 @@
 ﻿using FluentValidation;
+using System.Diagnostics.CodeAnalysis;
 
 namespace TalentConsulting.TalentSuite.Projects.API.Queries.GetSows;
 
+[ExcludeFromCodeCoverage]
 public class GetSowByProjectIdAndSowIdCommandValidator : AbstractValidator<GetSowByProjectIdAndSowIdCommand>
 {
     public GetSowByProjectIdAndSowIdCommandValidator()

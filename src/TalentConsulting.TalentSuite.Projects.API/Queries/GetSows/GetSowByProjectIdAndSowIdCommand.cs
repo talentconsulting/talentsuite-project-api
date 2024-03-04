@@ -34,7 +34,7 @@ public class GetSowByProjectIdAndSowIdCommandHandler : IRequestHandler<GetSowByP
     public async Task<SowDto> Handle(GetSowByProjectIdAndSowIdCommand request, CancellationToken cancellationToken)
     {
         var entity = await _context.Sows
-            .FirstOrDefaultAsync(x => x.Id == request.Id && x.ProjectId == request.ProjectId, cancellationToken: cancellationToken);
+            .FirstOrDefaultAsync(x => x.Id.ToString() == request.Id && x.ProjectId.ToString() == request.ProjectId, cancellationToken: cancellationToken);
 
         if (entity == null)
         {

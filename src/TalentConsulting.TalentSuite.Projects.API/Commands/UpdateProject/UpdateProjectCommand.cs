@@ -1,6 +1,7 @@
 ﻿using Ardalis.GuardClauses;
 using AutoMapper;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using TalentConsulting.TalentSuite.Projects.Common.Entities;
 using TalentConsulting.TalentSuite.Projects.Core.Entities;
 using TalentConsulting.TalentSuite.Projects.Core.Interfaces.Commands;
@@ -33,7 +34,18 @@ public class UpdateProjectCommandHandler : IRequestHandler<UpdateProjectCommand,
     }
     public async Task<string> Handle(UpdateProjectCommand request, CancellationToken cancellationToken)
     {
-        var entity = _context.Projects.FirstOrDefault(x => x.Id == request.Id);
+        if (request.ProjectDto is null)
+        {
+            throw new NotFoundException(nameof(Project), request.Id);
+        }
+
+        var entity = _context.Projects.AsNoTracking()
+            .Include(x => x.ClientProjects)
+            .Include(x => x.Contacts)
+            .Include(x => x.Reports)
+            .ThenInclude(x => x.Risks)
+            .Include(x => x.Sows)
+            .FirstOrDefault(x => x.Id.ToString() == request.Id);
         if (entity == null)
         {
             throw new NotFoundException(nameof(Project), request.Id);
@@ -41,18 +53,10 @@ public class UpdateProjectCommandHandler : IRequestHandler<UpdateProjectCommand,
 
         try
         {
-            entity.ContactNumber = request.ProjectDto.ContactNumber;
-            entity.Name = request.ProjectDto.Name;
-            entity.Reference = request.ProjectDto.Reference;
-            entity.StartDate = request.ProjectDto.StartDate;
-            entity.EndDate = request.ProjectDto.EndDate;
-
-            entity.ClientProjects = AttachExistingClientProjects(request.ProjectDto.ClientProjects);
-            entity.Contacts = AttachExistingContacts(request.ProjectDto.Contacts);
-            entity.Reports = AttachExistingReports(request.ProjectDto.Reports);
-            entity.Sows = AttachExistingSows(request.ProjectDto.Sows);
+            _mapper.Map(request.ProjectDto, entity);
 
             await _context.SaveChangesAsync(cancellationToken);
+
         }
         catch (Exception ex)
         {
@@ -64,178 +68,5 @@ public class UpdateProjectCommandHandler : IRequestHandler<UpdateProjectCommand,
             return request.ProjectDto.Id;
         else
             return string.Empty;
-    }
-
-    private ICollection<ClientProject> AttachExistingClientProjects(ICollection<ClientProjectDto>? unSavedEntities)
-    {
-        var returnList = new List<ClientProject>();
-
-        if (unSavedEntities is null || !unSavedEntities.Any())
-            return returnList;
-
-        var existing = _context.ClientProjects.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id)).ToList();
-
-        for (var i = 0; i < unSavedEntities.Count; i++)
-        {
-            var unSavedItem = unSavedEntities.ElementAt(i);
-            var savedItem = existing.Find(x => x.Id == unSavedItem.Id);
-
-            if (savedItem is not null)
-            {
-                savedItem.ClientId = unSavedItem.ClientId;
-                savedItem.ProjectId = unSavedItem.ClientId;
-
-            }
-
-            returnList.Add(savedItem ?? _mapper.Map<ClientProject>(unSavedItem));
-
-        }
-
-        return returnList;
-    }
-
-    private ICollection<Contact> AttachExistingContacts(ICollection<ContactDto>? unSavedEntities)
-    {
-        var returnList = new List<Contact>();
-
-        if (unSavedEntities is null || !unSavedEntities.Any())
-            return returnList;
-
-        var existing = _context.Contacts.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id)).ToList();
-
-        for (var i = 0; i < unSavedEntities.Count; i++)
-        {
-            var unSavedItem = unSavedEntities.ElementAt(i);
-            var savedItem = existing.Find(x => x.Id == unSavedItem.Id);
-
-            if (savedItem is not null)
-            {
-                savedItem.Firstname = unSavedItem.Firstname;
-                savedItem.Email = unSavedItem.Email;
-                savedItem.ReceivesReport = unSavedItem.ReceivesReport;
-                savedItem.ProjectId = unSavedItem.ProjectId;
-            }
-
-            returnList.Add(savedItem ?? _mapper.Map<Contact>(unSavedItem));
-        }
-
-        return returnList;
-    }
-
-    private ICollection<Report> AttachExistingReports(ICollection<ReportDto>? unSavedEntities)
-    {
-        var returnList = new List<Report>();
-
-        if (unSavedEntities is null || !unSavedEntities.Any())
-            return returnList;
-
-        var existing = _context.Reports.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id)).ToList();
-
-        for (var i = 0; i < unSavedEntities.Count; i++)
-        {
-            var unSavedItem = unSavedEntities.ElementAt(i);
-            var savedItem = existing.Find(x => x.Id == unSavedItem.Id);
-
-            if (savedItem is not null)
-            {
-                savedItem.PlannedTasks = unSavedItem.PlannedTasks;
-                savedItem.CompletedTasks = unSavedItem.CompletedTasks;
-                savedItem.Weeknumber = unSavedItem.Weeknumber;
-                savedItem.ProjectId = unSavedItem.ProjectId;
-                savedItem.SubmissionDate = unSavedItem.SubmissionDate;
-                savedItem.UserId = unSavedItem.UserId;
-                savedItem.Risks = AttachExistingRisks(unSavedItem.Risks);
-            }
-
-            returnList.Add(savedItem ?? _mapper.Map<Report>(unSavedItem));
-        }
-
-        return returnList;
-    }
-
-    private ICollection<Risk> AttachExistingRisks(ICollection<RiskDto>? unSavedEntities)
-    {
-        var returnList = new List<Risk>();
-
-        if (unSavedEntities is null || !unSavedEntities.Any())
-            return returnList;
-
-        var existing = _context.Risks.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id)).ToList();
-
-        for (var i = 0; i < unSavedEntities.Count; i++)
-        {
-            var unSavedItem = unSavedEntities.ElementAt(i);
-            var savedItem = existing.Find(x => x.Id == unSavedItem.Id);
-
-            if (savedItem is not null)
-            {
-                savedItem.ReportId = unSavedItem.ReportId;
-                savedItem.RiskDetails = unSavedItem.RiskDetails;
-                savedItem.RiskMitigation = unSavedItem.RiskMitigation;
-                savedItem.RagStatus = unSavedItem.RagStatus;
-            }
-
-            returnList.Add(savedItem ?? _mapper.Map<Risk>(unSavedItem));
-        }
-
-        return returnList;
-    }
-
-    private ICollection<Sow> AttachExistingSows(ICollection<SowDto>? unSavedEntities)
-    {
-        var returnList = new List<Sow>();
-
-        if (unSavedEntities is null || !unSavedEntities.Any())
-            return returnList;
-
-        var existing = _context.Sows.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id)).ToList();
-
-        for (var i = 0; i < unSavedEntities.Count; i++)
-        {
-            var unSavedItem = unSavedEntities.ElementAt(i);
-            var savedItem = existing.Find(x => x.Id == unSavedItem.Id);
-
-            if (savedItem is not null)
-            {
-                savedItem.ProjectId = unSavedItem.ProjectId;
-                savedItem.Files = AttachExistingSowFiles(unSavedItem.Files);
-                savedItem.IsChangeRequest = unSavedItem.IsChangeRequest;
-                savedItem.SowStartDate = unSavedItem.StartDate;
-                savedItem.SowEndDate = unSavedItem.EndDate;
-            }
-
-            returnList.Add(savedItem ?? _mapper.Map<Sow>(unSavedItem));
-        }
-
-        return returnList;
-    }
-
-    private ICollection<SowFile> AttachExistingSowFiles(ICollection<SowFileDto>? unSavedEntities)
-    {
-        var returnList = new List<SowFile>();
-
-        if (unSavedEntities is null || !unSavedEntities.Any())
-            return returnList;
-
-        var existing = _context.SowFiles.Where(e => unSavedEntities.Select(c => c.Id).Contains(e.Id)).ToList();
-
-        for (var i = 0; i < unSavedEntities.Count; i++)
-        {
-            var unSavedItem = unSavedEntities.ElementAt(i);
-            var savedItem = existing.Find(x => x.Id == unSavedItem.Id);
-
-            if (savedItem is not null)
-            {
-                savedItem.Mimetype = unSavedItem.Mimetype;
-                savedItem.Filename = unSavedItem.Filename;
-                savedItem.Size = unSavedItem.Size;
-                savedItem.SowId = unSavedItem.SowId;
-                savedItem.File = unSavedItem.File;
-            }
-
-            returnList.Add(savedItem ?? _mapper.Map<SowFile>(unSavedItem));
-        }
-
-        return returnList;
     }
 }

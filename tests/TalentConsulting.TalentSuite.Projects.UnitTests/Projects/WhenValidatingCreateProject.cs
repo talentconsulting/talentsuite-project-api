@@ -82,7 +82,7 @@ public class WhenValidatingCreateProject : BaseTestValidation
         var result = validator.Validate(testModel);
 
         //Assert
-        result.Errors.Exists(x => x.PropertyName == "ProjectDto.ContactNumber").Should().BeTrue();
+        result.Errors.Exists(x => x.PropertyName == "ProjectDto.ContractNumber").Should().BeTrue();
     }
     [Fact]
     public void ThenShouldErrorWhenModelHasNoReferance()

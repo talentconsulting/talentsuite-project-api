@@ -43,7 +43,7 @@ public class GetProjectsCommandHandler : IRequestHandler<GetProjectsCommand, Pag
             throw new NotFoundException(nameof(Project), "Projects");
         }
 
-        var filteredProjects = await entities.Select(x => EntityToDtoHelper.ProjectDtoToProjectDto(x)).ToListAsync();
+        var filteredProjects = await entities.Select(x => EntityToDtoHelper.ProjectToProjectDto(x)).ToListAsync();
 
         if (request != null)
         {

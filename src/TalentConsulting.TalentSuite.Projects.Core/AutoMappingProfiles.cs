@@ -8,6 +8,7 @@ public class AutoMappingProfiles : Profile
 {
     public AutoMappingProfiles()
     {
+        CreateMap<string, Guid>().ConvertUsing(new TalentConsulting.TalentSuite.Projects.Core.Helpers.StringToGuidConverter());
         CreateMap<ContactDto, Contact>().ReverseMap();
         CreateMap<ClientDto, Client>().ReverseMap();
         CreateMap<ClientProjectDto, ClientProject>().ReverseMap();
@@ -19,3 +20,4 @@ public class AutoMappingProfiles : Profile
         CreateMap<SowFileDto, SowFile>().ReverseMap();
     }
 }
+

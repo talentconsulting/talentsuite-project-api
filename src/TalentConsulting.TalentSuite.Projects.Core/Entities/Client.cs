@@ -6,11 +6,11 @@ using TalentConsulting.TalentSuite.Projects.Common.Interfaces;
 namespace TalentConsulting.TalentSuite.Projects.Core.Entities;
 
 [Table("cients")]
-public class Client : EntityBase<string>, IAggregateRoot
+public class Client : EntityBase<Guid>, IAggregateRoot
 {
     private Client() { }
 
-    public Client(string id, string name, string contactname, string contactemail, ICollection<ClientProject> clientProjects)
+    public Client(Guid id, string name, string contactname, string contactemail, ICollection<ClientProject> clientProjects)
     {
         Id = id;
         Name = name;
@@ -18,6 +18,7 @@ public class Client : EntityBase<string>, IAggregateRoot
         ContactEmail = contactemail;
         ClientProjects = clientProjects;
     }
+
     public string Name { get; set; } = null!;
     public string ContactName { get; set; } = null!;
     public string ContactEmail { get; set; } = null!;
