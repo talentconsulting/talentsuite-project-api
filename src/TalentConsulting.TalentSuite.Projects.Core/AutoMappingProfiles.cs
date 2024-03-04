@@ -8,7 +8,7 @@ public class AutoMappingProfiles : Profile
 {
     public AutoMappingProfiles()
     {
-        CreateMap<string, Guid>().ConvertUsing(new StringToGuidConverter());
+        CreateMap<string, Guid>().ConvertUsing(new TalentConsulting.TalentSuite.Projects.Core.Helpers.StringToGuidConverter());
         CreateMap<ContactDto, Contact>().ReverseMap();
         CreateMap<ClientDto, Client>().ReverseMap();
         CreateMap<ClientProjectDto, ClientProject>().ReverseMap();
@@ -21,10 +21,3 @@ public class AutoMappingProfiles : Profile
     }
 }
 
-public class StringToGuidConverter : ITypeConverter<string, Guid>
-{
-    public Guid Convert(string source, Guid destination, ResolutionContext context)
-    {
-        return new Guid(source);
-    }
-}
