@@ -242,7 +242,7 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
                         Mimetype = "application/pdf",
                         Filename = "document.pdf",
                         Size = 1024,
-                        SowId = "67890",
+                        SowId = new Guid("946c4c15-913c-42e1-947d-b813b90f4d81"),
                         File = new byte[] { 0x12, 0x34, 0x56, 0x78 }
                     }
                 }
@@ -287,7 +287,7 @@ public class WhenUsingProjectCommands : BaseCreateDbUnitTest
                         Mimetype = "application/pdf",
                         Filename = "document.pdf",
                         Size = 1024,
-                        SowId = "67890",
+                        SowId = "946c4c15-913c-42e1-947d-b813b90f4d81",
                         File = new byte[] { 0x12, 0x34, 0x56, 0x78 }
                     }
 

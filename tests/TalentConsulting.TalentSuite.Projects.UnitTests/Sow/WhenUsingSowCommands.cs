@@ -20,7 +20,7 @@ public class WhenUsingSowCommands : BaseCreateDbUnitTest
         await mockApplicationDbContext.SaveChangesAsync();
 
 
-        var command = new GetSowByProjectIdAndSowIdCommand("a3226044-5c89-4257-8b07-f29745a22e2c", "946c4c15-913c-42e1-947d-b813b90f4d81");
+        var command = new GetSowByProjectIdAndSowIdCommand(dbProject.Id.ToString(), dbProject.Sows.ElementAt(0).Id.ToString());
         var handler = new GetSowByProjectIdAndSowIdCommandHandler(mockApplicationDbContext, _mapper);
 
         //Act
@@ -28,8 +28,8 @@ public class WhenUsingSowCommands : BaseCreateDbUnitTest
 
         //Assert
         result.Should().NotBeNull();
-        result.Id.Should().Be("946c4c15-913c-42e1-947d-b813b90f4d81");
-        result.ProjectId.Should().Be("a3226044-5c89-4257-8b07-f29745a22e2c");
+        result.Id.Should().BeEquivalentTo(dbProject.Sows.ElementAt(0).Id.ToString());
+        result.ProjectId.Should().Be(dbProject.Id.ToString());
     }
 
     [Fact]

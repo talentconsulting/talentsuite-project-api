@@ -79,7 +79,7 @@ public class UpdateSowCommandHandler : IRequestHandler<UpdateSowCommand, Guid>
                 savedItem.Mimetype = unSavedItem.Mimetype;
                 savedItem.Filename = unSavedItem.Filename;
                 savedItem.Size = unSavedItem.Size;
-                savedItem.SowId = unSavedItem.SowId;
+                savedItem.SowId = new Guid(unSavedItem.SowId);
                 savedItem.File = unSavedItem.File;
             }
 
