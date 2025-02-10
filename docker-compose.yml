@@ -32,8 +32,8 @@ services:
       sqlserver:
         condition: service_healthy
     environment:
-      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=MyDatabase;User Id=sa;Password=YourStrong!Passw0rd;"
-    entrypoint: ["./wait-for-it.sh", "sqlserver:1433", "--", "dotnet", "MyApp.dll"]
+      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=ClientProjectsDb;User Id=sa;Password=YourStrong!Passw0rd;"
+    entrypoint: ["/app/wait-for-it.sh", "sqlserver:1433", "-s", "-t", "20", "--", "dotnet", "TalentConsulting.TalentSuite.Projects.API.dll"]
 volumes:
   mssql_data:
 networks:
