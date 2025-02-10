@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  projects-api:
+    container_name: projects-api
+    build:
+      context: ../projects-api
+    networks:
+      - contract-test-network
+    environment:
+      - ASPNETCORE_URLS=http://+:80
+  consumer-contract-tests:
+    container_name: example-contract-tests-service
+    build:
+      context: ./contract-tests
+    environment: # TODO: change port 9000 if needed
+      - SERVICE_UNDER_TEST_HOSTNAME=api-service
+    entrypoint: ./node_modules/.bin/cucumber-js ./features/**/*.feature
+    links:
+      - api-service
+    networks:
+      - contract-test-network
+networks:
+  contract-test-network:
+    driver: bridge
