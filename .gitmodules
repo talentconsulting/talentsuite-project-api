@@ -1,0 +1,3 @@
+[submodule "talentsuite-db"]
+	path = talentsuite-db
+	url = https://github.com/talentconsulting/talentsuite-db.git

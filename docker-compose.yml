@@ -8,32 +8,53 @@ services:
       ACCEPT_EULA: "Y"
     ports:
       - "1433:1433"
+      - "1434:1434"
     healthcheck:
       test: ["CMD", "/opt/mssql-tools18/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "YourStrong!Passw0rd", "-Q", "SELECT 1", "-C"]
       interval: 1s
       retries: 5
       start_period: 20s
       timeout: 5s
+    networks:
+      - app_network
+
   db-init:
-    image: mcr.microsoft.com/mssql-tools
-    container_name: db_init
+    build:
+      context: ./talentsuite-db/src/DbMigrator
+      dockerfile: Dockerfile
+    environment:
+      CONNECTION_STRING: "Server=sqlserver;Database=ClientProjectsDb;User Id=sa;Password=YourStrong!Passw0rd;Encrypt=False;"
+      SEEDDATA: true
     depends_on:
       sqlserver:
         condition: service_healthy
-    volumes:
-      - ./db-init:/db-init
-    entrypoint: ["/db-init/entrypoint.sh"]
+    networks:
+      - app_network
+  # db-init:
+  #   image: mcr.microsoft.com/mssql-tools
+  #   container_name: db_init
+  #   depends_on:
+  #     sqlserver:
+  #       condition: service_healthy
+  #   volumes:
+  #     - ./db-init:/db-init
+  #   entrypoint: ["/db-init/entrypoint.sh"]
   app:
     build:
       context: .
       dockerfile: Dockerfile
     container_name: talent-suite-projects-api
+    ports:
+      - "80:8080"
     depends_on:
       sqlserver:
         condition: service_healthy
     environment:
       ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=ClientProjectsDb;User Id=sa;Password=YourStrong!Passw0rd;"
     entrypoint: ["/app/wait-for-it.sh", "sqlserver:1433", "-s", "-t", "20", "--", "dotnet", "TalentConsulting.TalentSuite.Projects.API.dll"]
+    networks:
+      - app_network
+
 volumes:
   mssql_data:
 networks:
